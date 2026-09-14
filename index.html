@@ -1,0 +1,1294 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>经管前沿 · 每周研读</title>
+  <meta name="description" content="从核心发现和一个好问题出发，探索经管论文的争论、证据、疑点、原文导读与研究启发。">
+  <meta name="theme-color" content="#8e2433">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%238e2433'/%3E%3Cpath d='M8 8h16M8 16h11M8 24h16' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
+  <style>@charset "UTF-8";
+:root{--ink:#202735;--muted:#657080;--accent:#8e2433;--accent-light:#f9eff0;--line:#e2e6eb;--surface:#f5f7fa;--font:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:#fff;font:16px/1.7 var(--font)}button,input,select{font:inherit}button,a,input,select,summary{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:var(--accent);text-underline-offset:4px}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #c3828b;outline-offset:3px}.skip{position:fixed;top:-100px;left:20px;z-index:10;background:white;padding:12px}.skip:focus{top:10px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}.masthead{height:94px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 36px;gap:24px}.brand{display:flex;align-items:center;gap:14px;color:var(--ink);text-decoration:none;font:600 25px/1.3 "Songti SC","Noto Serif CJK SC",serif;letter-spacing:2px}.brand small{display:block;font:11px/1.7 var(--font);letter-spacing:1.6px;color:var(--muted);margin-top:4px}.mark{display:grid;place-items:center;width:43px;height:48px;background:var(--accent);color:#fff;font-size:27px;letter-spacing:0}.header-note{font-size:14px;color:var(--muted);margin-left:auto}.edition-badge{font-size:13px;border:1px solid var(--line);padding:3px 12px;border-radius:3px}.workspace{display:grid;grid-template-columns:220px minmax(0,1fr)}.sidebar{background:#fafbfc;border-right:1px solid var(--line);padding:30px 23px;display:flex;flex-direction:column;min-height:calc(100vh - 94px)}.label{display:block;font-size:14px;font-weight:600;margin:0 0 11px}.sidebar select{width:100%;border:1px solid #d8dce3;background:#fff;padding:9px 8px;color:var(--ink);border-radius:4px;font-size:14px}.issue-date{font-size:13px;color:var(--muted);margin:9px 0 0}.rule{border-top:1px solid var(--line);margin:27px 0}.scope-buttons{display:grid;gap:7px}.scope-buttons button{border:0;background:transparent;text-align:left;padding:10px 12px;border-radius:4px;color:#56606f;font-size:14px;display:flex;justify-content:space-between}.scope-buttons button[aria-pressed="true"]{background:var(--accent-light);color:var(--accent);font-weight:600}.scope-buttons span{font-size:13px}.subject-label{margin-top:29px}.sidebar-bottom{margin-top:80px;color:var(--muted);font-size:13px}.schedule-label{font-size:12px;letter-spacing:1px}.sidebar-bottom>p{color:var(--ink);font-size:15px;line-height:1.65;margin:8px 0 26px}.sidebar-bottom small{display:block;color:var(--muted);font-size:12px}.sidebar-bottom details{border-top:1px solid var(--line);padding-top:16px}.sidebar-bottom summary{font-size:13px;cursor:pointer}.sidebar-bottom a{font-size:12px}.main{min-width:0;max-width:1520px;padding:29px 36px 20px;width:100%;margin:auto}.issue-intro{display:flex;justify-content:space-between;align-items:center;gap:20px}.eyebrow{margin:0 0 5px;color:var(--accent);font-size:12px;font-weight:600;letter-spacing:1.5px}h1{font:600 29px/1.5 "Songti SC","Noto Serif CJK SC",serif;margin:0 0 6px}.issue-description{font-size:14px;color:var(--muted);margin:0;max-width:850px}.issue-stat{display:flex;align-items:center;gap:13px;flex:none;padding-left:26px;border-left:1px solid var(--line)}.issue-stat strong{font:400 44px/1.2 Georgia,serif;color:var(--accent)}.issue-stat span{font-size:12px;color:var(--muted);max-width:35px;line-height:1.5}.overview{margin:24px 0;background:var(--surface);border-left:3px solid var(--accent);font-size:14px}.overview summary{list-style:none;display:flex;align-items:center;gap:22px;padding:12px 17px;cursor:pointer}.overview summary::-webkit-details-marker{display:none}.overview summary>span:first-child{font-weight:600;flex:none}.overview-teaser{color:var(--muted)}.expand-label{margin-left:auto;color:var(--accent);font-size:12px;flex:none}.overview[open] .expand-label{font-size:0}.overview[open] .expand-label:after{content:'收起';font-size:12px}.overview>div{padding:0 18px 15px;max-width:1000px;color:#4d5765}.overview p{margin:4px 0 10px}.reading-workspace{display:grid;grid-template-columns:minmax(280px,33%) minmax(0,1fr);border:1px solid var(--line);border-radius:5px;overflow:hidden;align-items:start}.paper-browser{background:#fbfcfd;align-self:stretch;border-right:1px solid var(--line)}.browser-toolbar{padding:18px 18px 9px;border-bottom:1px solid var(--line)}.search-box{display:flex;align-items:center;border:1px solid #dce1e7;background:white;border-radius:4px;padding:5px 10px;gap:8px}.search-box>span{font-size:26px;line-height:1;color:#77818f}.search-box input{border:0;background:transparent;width:100%;min-width:0;font-size:14px;padding:4px 0;color:var(--ink)}.browser-toolbar>p{display:flex;justify-content:space-between;margin:10px 0 0;font-size:12px;color:var(--muted)}.browser-toolbar button{background:none;color:var(--accent);border:0;font-size:12px;padding:0}.paper-card{width:100%;display:block;background:transparent;text-align:left;border:0;border-bottom:1px solid var(--line);border-left:3px solid transparent;padding:20px 18px 19px 15px;transition:background .15s;color:var(--ink)}.paper-card:hover{background:#f1f3f6}.paper-card[aria-current="true"]{background:white;border-left-color:var(--accent)}.card-top{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:12px;color:var(--muted);margin-bottom:9px}.paper-card[aria-current="true"] .card-top{color:var(--accent)}.card-number{font:15px Georgia,serif;color:#8b929d}.card-title{display:block;font-size:16px;line-height:1.65;font-weight:600;margin-bottom:8px}.card-question{display:block;font-size:13px;color:var(--muted);line-height:1.75;margin-bottom:11px}.card-bottom{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px}.card-tag{background:#eef1f5;padding:2px 6px;border-radius:3px}.paper-card[aria-current="true"] .card-tag{background:var(--accent-light);color:var(--accent)}.reader{padding:29px 35px 35px;min-width:0;scroll-margin-top:20px;outline:none}.reader-top{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--accent);font-size:12px;letter-spacing:.5px}.source-link{font-size:13px;white-space:nowrap;text-decoration:none}.reader h2{font:600 27px/1.55 "Songti SC","Noto Serif CJK SC",serif;margin:14px 0 7px;overflow-wrap:anywhere}.english-title{font:15px/1.6 Georgia,serif;color:var(--muted);margin:0 0 14px}.authors{font-size:14px;color:#4e5967;margin:0 0 5px}.publication{font-size:12px;color:var(--muted);margin:0}.evidence{margin-top:16px;background:#f4f6f9;font-size:12px;color:#5d6877;padding:9px 12px;border-radius:3px}.question-nav{display:flex;flex-wrap:wrap;gap:14px;margin:22px 0 0;padding-bottom:18px;border-bottom:1px solid var(--line)}.question-nav a{text-decoration:none;font-size:12px;color:var(--muted)}.question-nav a:hover{color:var(--accent)}.question-section{margin-top:29px;scroll-margin-top:24px}.question-heading{display:flex;align-items:baseline;gap:12px;margin-bottom:10px}.question-number{font:italic 23px Georgia,serif;color:var(--accent);flex:none}.question-section h3{font-size:17px;line-height:1.65;margin:0;font-weight:600}.question-section p{font-size:16px;line-height:1.95;margin:9px 0;color:#3f4957;overflow-wrap:anywhere}.question-section .aside-note{font-size:14px;line-height:1.85;border-left:2px solid #d9b4ba;padding-left:13px;margin-top:12px;color:#68717f}.research-note{display:inline-block;color:var(--accent);font-size:12px;background:var(--accent-light);padding:2px 7px;border-radius:3px;margin-top:3px}.reader-bottom{display:flex;justify-content:space-between;gap:15px;margin-top:35px;border-top:1px solid var(--line);padding-top:20px}.reader-bottom button,.back-button,.empty button{border:1px solid var(--line);background:white;color:var(--ink);padding:7px 12px;border-radius:4px;font-size:14px}.reader-bottom button:disabled{opacity:.35;cursor:default}.reader-bottom span{font-size:12px;color:var(--muted);align-self:center}.back-button{display:none}.coverage{display:flex;justify-content:space-between;gap:30px;margin-top:18px;font-size:12px;color:var(--muted)}.coverage summary{cursor:pointer}.coverage p{max-width:800px}.coverage>span{white-space:nowrap}.empty{padding:36px 22px;text-align:center}.empty strong{font-size:16px}.empty p{font-size:14px;color:var(--muted)}.reader-placeholder{display:grid;place-content:center;min-height:400px;color:var(--muted);text-align:center}.reader-placeholder p{font-size:14px}@media(min-width:1450px){.reader{padding:32px 48px}.reading-workspace{grid-template-columns:365px minmax(0,1fr)}}@media(max-width:1150px){.masthead{padding:0 24px}.workspace{grid-template-columns:190px minmax(0,1fr)}.sidebar{padding:26px 16px}.main{padding:25px 22px}.reader{padding:25px}.reading-workspace{grid-template-columns:280px minmax(0,1fr)}.overview-teaser{display:none}.reader h2{font-size:24px}.issue-stat{display:none}}@media(max-width:900px){.workspace{display:block}.masthead{height:80px}.sidebar{min-height:0;border-right:0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;padding:18px 24px}.sidebar>.label:first-child{grid-column:1}.sidebar #issueSelect{grid-column:1}.sidebar .issue-date{grid-column:1;margin:0}.sidebar .rule,.sidebar h2,.sidebar-bottom{display:none}.scope-buttons{grid-column:2;grid-row:1 / 4;display:flex;flex-direction:column;gap:1px}.scope-buttons button{padding:4px 10px}.subject-label{grid-column:1;margin:0}.sidebar #subjectSelect{grid-column:2}.reading-workspace{grid-template-columns:260px minmax(0,1fr)}.main{padding:23px}.reader{padding:22px}.header-note{display:none}.brand{font-size:23px}.reader h2{font-size:23px}}@media(max-width:700px){.masthead{padding:0 18px}.brand small{font-size:10px;letter-spacing:1px}.edition-badge{font-size:12px;padding:2px 7px}.mark{width:36px;height:42px;font-size:24px}.sidebar{padding:16px 18px;gap:8px 14px}.main{padding:21px 16px}.issue-description{font-size:13px}h1{font-size:25px}.overview{margin:18px 0}.overview summary{gap:10px;padding:10px 13px}.reading-workspace{display:block}.paper-browser{border-right:0}.reader{display:none;padding:21px 19px}.main.reading .paper-browser{display:none}.main.reading .reader{display:block}.main.reading .issue-intro,.main.reading .overview{display:none}.paper-card{padding:18px}.back-button{display:inline-block;margin-bottom:22px}.reader h2{font-size:25px}.question-section h3{font-size:17px}.question-section p{font-size:16px}.question-nav{gap:14px}.coverage>span{display:none}.reader-top{flex-wrap:wrap}.reader-bottom{gap:8px}.reader-bottom button{font-size:13px}.reader-bottom span{font-size:12px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}@media print{.masthead{height:auto;padding:12px 0}.sidebar,.paper-browser,.overview,.issue-intro,.question-nav,.back-button,.reader-bottom,.coverage,.header-note,.edition-badge{display:none!important}.workspace,.main,.reading-workspace{display:block;padding:0;border:0}.reader{display:block!important;padding:20px 0}.question-section{break-inside:avoid}.reader h2{font-size:24px}}
+
+/* Discovery cards lead into the six-question reader. */
+.card-finding,.card-question,.card-reason{display:block;font-size:16px;line-height:1.8;margin:12px 0;color:var(--ink)}
+.card-label{display:block;font-size:14px;font-weight:600;color:var(--accent);margin-bottom:2px}
+.card-reason{color:var(--muted);font-size:14px}.card-bottom{justify-content:space-between;font-size:14px;margin-top:17px}
+.reading-workspace{grid-template-columns:minmax(300px,40%) minmax(0,1fr)}
+.reader-placeholder{min-height:390px;align-content:start;padding-top:45px}.reader-placeholder h2{font-size:24px}.reader-placeholder p{font-size:16px;max-width:30em}
+.question-nav a,.evidence,.research-note{font-size:14px}
+.publication-assessment{margin-top:30px;padding:18px 20px;background:var(--surface);border-radius:4px}.publication-assessment h3{font-size:16px;margin:0 0 8px}.publication-assessment p{font-size:16px;line-height:1.9;margin:8px 0}.publication-assessment .aside-note{font-size:14px;color:var(--muted)}
+@media(max-width:1150px){.reading-workspace{grid-template-columns:300px minmax(0,1fr)}}
+@media(max-width:900px){.reading-workspace{grid-template-columns:280px minmax(0,1fr)}}
+@media(max-width:700px){.reading-workspace{display:block}}
+
+.main:not(.reading) .reading-workspace{display:block}.main:not(.reading) .reader{display:none}.main:not(.reading) .paper-browser{border-right:0}.main:not(.reading) .paper-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.main:not(.reading) .paper-card{height:100%;padding:24px;border-right:1px solid var(--line)}.back-button{display:inline-block;margin-bottom:18px}
+@media(max-width:700px){.main:not(.reading) .paper-list{display:block}.main:not(.reading) .paper-card{padding:20px;border-right:0}}
+
+@media(min-width:701px) and (max-width:1000px){.main.reading .reading-workspace{display:block}.main.reading .paper-browser{display:none}.main.reading .reader{display:block}}
+/* Issue supplements reuse the existing reading palette. */
+.issue-extras{padding:24px 32px;border-top:1px solid var(--line);font-size:16px;line-height:1.85;overflow-wrap:anywhere}
+.issue-extras[hidden]{display:none}.issue-extras details{border-bottom:1px solid var(--line);padding:16px 0}.issue-extras summary{cursor:pointer;font-weight:600;color:var(--accent)}.issue-extras li{margin:14px 0}.issue-extras p{margin:5px 0 12px;color:var(--muted)}.issue-extras h3{font-size:18px;margin-top:25px}.issue-extras h4{font-size:16px}.recommendation{background:none;border:0;text-align:left;padding:0;color:var(--accent);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.issue-extras{padding:16px 20px}.issue-extras ul,.issue-extras ol{padding-left:22px}}
+</style>
+  
+</head>
+<body>
+  <a class="skip" href="#reader">跳到论文解读</a>
+  <header class="masthead"><a class="brand" href="./"><span class="mark" aria-hidden="true">经</span><span>经管前沿<small>每周研读 / ECONOMICS WEEKLY</small></span></a><span class="header-note">从一个发现，到一个好问题</span><span class="edition-badge">六问研读</span></header>
+  <div class="workspace">
+    <aside class="sidebar" aria-label="周报与筛选">
+      <label class="label" for="issueSelect">本期周报</label><select id="issueSelect"></select>
+      <p class="issue-date" id="issueDate"></p>
+      <div class="rule"></div>
+      <h2 class="label">期刊范围</h2>
+      <div class="scope-buttons" id="scopes"><button data-scope="all" aria-pressed="true">全部论文 <span id="countAll">6</span></button><button data-scope="international" aria-pressed="false">国际期刊 <span id="countInternational">—</span></button><button data-scope="chinese" aria-pressed="false">中文 A 刊 <span id="countChinese">—</span></button></div>
+      <label class="label subject-label" for="subjectSelect">研究方向</label><select id="subjectSelect"><option value="all">全部方向</option></select>
+      <div class="sidebar-bottom"><span class="schedule-label">周报安排</span><p>每周一 · 09:00 启动<small>北京时间</small></p><details><summary>收录与阅读说明</summary><p>中文等级按人大公开的 2017 年修订试行目录。用于文献阅读，不等同于所在年级的毕业或评奖认定。</p><a href="https://lib.ruc.edu.cn/docs/2023-11/6e83e72e2492425294dece57eb0138da.pdf" target="_blank" rel="noopener noreferrer">查看目录依据 ↗</a><p>每篇标明阅读材料与原文。研究建议是待验证的问题，未经系统文献查重。</p></details></div>
+    </aside>
+    <main class="main" id="main">
+      <section class="issue-intro" aria-labelledby="issueTitle"><div><p class="eyebrow" id="issueEyebrow"></p><h1 id="issueTitle"></h1><p class="issue-description" id="issueDescription"></p></div><div class="issue-stat"><strong id="issueCount">6</strong><span>篇精选论文</span></div></section>
+      <details class="overview"><summary><span>本期研究线索</span><span class="overview-teaser" id="overviewTeaser"></span><span class="expand-label">展开</span></summary><div id="overviewBody"></div></details>
+      <section class="reading-workspace" aria-label="论文阅读区">
+        <div class="paper-browser"><div class="browser-toolbar"><label for="search" class="sr-only">搜索标题、作者或关键词</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索论文、作者或关键词" autocomplete="off"></div><p><span id="resultCount" aria-live="polite"></span><button id="reset" hidden>清除筛选</button></p></div><div id="paperList" class="paper-list"></div><div id="empty" class="empty" hidden><strong>没有找到匹配的论文</strong><p>换一个关键词，或清除筛选。</p><button id="emptyReset">显示全部论文</button></div></div>
+        <article id="reader" class="reader" aria-label="六问论文解读" tabindex="-1"></article>
+      </section>
+      <section id="issueExtras" class="issue-extras" hidden aria-label="更多目录与精读建议"></section>
+      <footer class="coverage"><details><summary>本期覆盖范围与原始目录</summary><div id="coverageBody"></div></details><span>经管前沿 · 每周研读</span></footer>
+    </main>
+  </div>
+<script>window.WEEKLY_ISSUES = [
+  {
+    "id": "2026-09-14",
+    "label": "第 1 期 · 正式周报",
+    "date": "2026-09-14",
+    "title": "收益归谁，证据可信吗？",
+    "description": "国际 4 篇＋国内中文 A 刊 2 篇 · 首次正式基线：1 篇近期在线发表、5 篇最新刊期精选。不是全部发表于过去一周。",
+    "teaser": "最低工资、企业减税、算法激励与计量推断，连接市场整合和家庭消费。",
+    "overview": [
+      "本期先问两个问题：政策改变之后，收益和成本落到谁身上？我们据以判断效果的证据可靠吗？最低工资论文把企业融资状况带入劳动政策；减税论文提醒我们，企业增长和收入分配不能混为一谈。两篇中国研究则从准入改革与行政边界入手，分别连接家庭消费和企业跨地区经营。把它们放在一起读，可以练习区分平均效果、群体差异与资源重配。",
+      "另两篇提供方法上的提醒：算法公开后，人会回应激励；模型看似给出精确答案，区间却可能因设定偏误而不可靠。选文归纳指向“行为反应与识别边界”，不是声称全领域出现统一新趋势。本期国际论文偏重劳动、公共经济与计量，国内论文偏重制度改革；这一差异只描述本期选样，不能推广为国内外研究全貌。",
+      "这是首次正式建立基线。RFS 精选论文发表于9月11日，其余五篇是此前未解读的最新刊期文章。第0期保留；没有把同一期旧文章重新算作本周新发表。来源不足的内容明确标注，未取得全文时不编造图表位置。"
+    ],
+    "coverage": "截至2026-09-14。检查范围为国际13刊、国内中文A类12刊和9种综合交叉/转载刊物。各刊记录下方逐项列示：可读取入口不等于已完成全库逐篇基线。AER 9月刊与《世界经济》8月刊已整理本期目录，其余部分目录仍有访问、日期或完整提取缺口；不能据此声称这些期刊没有新增。中文等级沿用人大公开2017年修订试行目录，不等同于现行毕业或评奖资格认定。",
+    "sources": [
+      {
+        "label": "AER 9月刊目录",
+        "url": "https://www.aeaweb.org/issues/859"
+      },
+      {
+        "label": "Econometrica 当前期",
+        "url": "https://onlinelibrary.wiley.com/toc/14680262/current"
+      },
+      {
+        "label": "RFS 在线优先",
+        "url": "https://academic.oup.com/rfs/advance-articles"
+      },
+      {
+        "label": "世界经济目录与摘要",
+        "url": "https://sjjj.magtech.com.cn/CN/home"
+      },
+      {
+        "label": "人大公开目录依据",
+        "url": "https://lib.ruc.edu.cn/docs/2023-11/6e83e72e2492425294dece57eb0138da.pdf"
+      }
+    ],
+    "papers": [
+      {
+        "id": "20260914-minimum-wage",
+        "scope": "international",
+        "journal": "RFS",
+        "subject": "劳动与金融",
+        "title": "最低工资的就业影响，取决于企业借不借得到钱？",
+        "english": "Corporate Financial Constraints, Minimum Wage Policies, and Employment",
+        "authors": "Alona Bilokha · Iftekhar Hasan · Stefano Manfredonia · Ronald W. Masulis",
+        "publication": "在线发表 2026-09-11 · 已接受稿（Accepted manuscript）· 尚无正式卷期",
+        "evidence": "仅期刊摘要；全文为 PDF，本次未取得正文。中文标题为阅读导题，非逐字译名。",
+        "url": "https://doi.org/10.1093/rfs/hhag075",
+        "finding": "同样提高最低工资，融资受限企业减少就业；不受限企业在部分劳动力市场反而扩张。",
+        "question": "一次工资政策，为什么可能把工作从一家企业推向另一家？",
+        "reason": "把劳动需求模型与融资约束接起来，先理解异质性，再判断总就业。",
+        "keywords": "劳动与金融 Corporate Financial Constraints, Minimum Wage Policies, and Employment",
+        "sections": [
+          {
+            "text": "作者报告，融资受限企业在最低工资上调后削减就业；不受限企业在最低工资劳动者供给较多、流动率较高的地区扩张。结论强调企业状态差异，不等于已证明总就业增加或下降。"
+          },
+          {
+            "text": "阅读理解：只问最低工资的平均效应，可能遗漏企业间重配。相同用工成本变化遇到不同融资条件，调整空间也不同。这篇文章为劳动政策讨论增加了企业资产负债表这一维度。"
+          },
+          {
+            "text": "摘要给出两组证据：金融危机期间联邦最低工资上调，结合危机前债务到期结构差异；以及各州分期上调最低工资。后者用于检验危机场景外是否也有类似模式。样本区间、具体估计式和效应量未在摘要披露。"
+          },
+          {
+            "text": "债务期限短的企业是否还面临不同的需求冲击？如果是，就不能把就业差异全归因于融资。精读应核查政策前趋势、行业地区冲击，以及债务结构是否在政策前确定。",
+            "critique": true,
+            "note": "这是待核查的替代解释，不是已发现作者漏做检验。"
+          },
+          {
+            "text": "拿到正文后，先找危机前债务到期结构如何形成处理差异，再看州级政策检验是否支持同一机制。本次只核实摘要，不提供未经核实的图表或页码。"
+          },
+          {
+            "text": "可追问中国最低工资调整后，银行信贷条件是否改变企业间岗位重配。可能连接企业信贷、工资与就业数据，并使用政策前融资指标；难点是最低工资调整和地方经济状况同时变化。",
+            "suggestion": true,
+            "note": "简报延伸，尚未核查新颖性；需要同时观察退出企业，避免只看存续者。"
+          }
+        ],
+        "assessment": {
+          "text": "值得关注的是用融资条件解释劳动政策的不同反应；真正的说服力仍要由债务结构差异的识别和跨情境检验支撑。",
+          "note": "我的阅读判断，非编辑或审稿意见；未做系统文献查重。"
+        },
+        "publicationType": "online",
+        "onlineDate": "2026-09-11",
+        "issueDate": null
+      },
+      {
+        "id": "20260914-tax-cuts",
+        "scope": "international",
+        "journal": "AER",
+        "subject": "公共经济学",
+        "title": "企业减税促进增长，收益会普遍流向劳动者吗？",
+        "english": "Corporate Tax Cuts, Firm Growth, and Workers' Earnings",
+        "authors": "Patrick J. Kennedy · Christine L. Dobridge · Paul Landefeld · Jacob Mortenson",
+        "publication": "2026 年 9 月刊 · 116(9): 3380–3422 · 具体出版日及在线首发日未核实",
+        "evidence": "期刊正式摘要；正文入口未返回可读全文。中文标题为阅读导题。",
+        "url": "https://doi.org/10.1257/aer.20240404",
+        "finding": "企业投资和就业扩张，并不意味着普通劳动者分享了大部分减税收益。",
+        "question": "如果总工资支出上升，为什么仍不足以说明低薪员工受益？",
+        "reason": "练习把企业增长、员工收入和税收收益归宿分开。",
+        "keywords": "公共经济学 Corporate Tax Cuts, Firm Growth, and Workers' Earnings",
+        "sections": [
+          {
+            "text": "摘要报告企业投资、销售、利润、就业和工资总额增加，但收入增益集中于高薪劳动者。短期私人收入增益中，87% 流向收入分布前 10% 人群；这不是“87% 的减税额”，也不是低薪劳动者的工资涨幅。"
+          },
+          {
+            "text": "阅读理解：效率与分配是两个问题。企业扩张可以与收益高度集中并存；总工资支出还会随员工人数和构成变化。读这篇时，应该逐项问“谁的收入、什么时间范围、相对哪个基准”。"
+          },
+          {
+            "text": "作者使用雇主—雇员匹配税务记录，以事件研究比较同一行业、规模相近但既有法律组织形式不同、从而税收变化不同的企业。关键是这些企业在没有改革时是否具有可比走势；摘要未提供完整样本和控制设定。"
+          },
+          {
+            "text": "法律形式是否同时对应不同的股东结构、融资渠道或增长轨迹？需要查看改革前趋势与稳健性分析，判断它是否带来了税收之外的差异。短期结果也不能直接回答长期工资归宿。",
+            "critique": true,
+            "note": "待核查问题，不代表论文已经存在识别缺陷。"
+          },
+          {
+            "text": "全文优先找两处：按法律形式构建的企业比较，以及把增益分配到收入分位的计算。尤其核对 87% 的分母与归属方法。本次未取得正文，具体图表编号尚未核实。"
+          },
+          {
+            "text": "可用中国某项税收政策研究“企业扩张但员工收益不同”：匹配税务、社保或工资数据，区分同一员工加薪、增聘员工和管理层报酬。难点是政策适用资格、选择性进入与员工流动。",
+            "suggestion": true,
+            "note": "简报延伸，非作者已验证的中国结论。"
+          }
+        ],
+        "assessment": {
+          "text": "价值在于把企业反应与个人收入归宿放进同一数据框架，避免用企业平均增长替代福利分配判断；全文识别仍需精读。",
+          "note": "我的阅读判断，非编辑或审稿意见；未做系统文献查重。"
+        },
+        "publicationType": "issue",
+        "onlineDate": null,
+        "issueDate": "2026-09"
+      },
+      {
+        "id": "20260914-manipulation",
+        "scope": "international",
+        "journal": "AER",
+        "subject": "机制设计与机器学习",
+        "title": "当人会迎合算法，预测准确还够吗？",
+        "english": "Manipulation-Robust Prediction",
+        "authors": "Daniel Björkegren · Joshua E. Blumenstock · Samsun Knight",
+        "publication": "2026 年 9 月刊 · 116(9): 3263–3293 · 具体出版日及在线首发日未核实",
+        "evidence": "正式摘要＋作者公开 2024-07-29 稿的实验部分；旧稿不等于 2026 定稿。中文标题为阅读导题。",
+        "url": "https://doi.org/10.1257/aer.20241087",
+        "finding": "把人的策略反应纳入训练后，算法即使公开规则，也可能比标准线性模型更稳健。",
+        "question": "一旦评分规则公开，人开始“刷指标”，历史数据训练出的好模型还好吗？",
+        "reason": "把预测问题看成激励问题，连接机器学习与机制设计。",
+        "keywords": "机制设计与机器学习 Manipulation-Robust Prediction",
+        "sections": [
+          {
+            "text": "正式摘要报告：在肯尼亚田野实验中，预先考虑操纵反应的线性决策规则，表现优于 LASSO 等标准线性模型。重点是部署后的反应，不只是历史测试集上的拟合。"
+          },
+          {
+            "text": "阅读理解：预测变量不一定外生于规则。规则影响回报，人又会改变可观察行为，因此模型上线后面对的环境可能变化。这里值得追问的是“我预测的是人原来的行为，还是他们知道规则以后的行为”。"
+          },
+          {
+            "text": "作者建模操纵激励，并用田野实验检验规则。公开旧稿第 4.2.1 节和表 3 利用随机行为激励观察手机使用变化，据此研究哪些指标易被改变。旧稿设计细节仅作机制导读，不能默认与定稿完全一致。"
+          },
+          {
+            "text": "实验里估出的操纵成本，换成更高奖金、更长期使用或不同人群还稳定吗？如果成本估计偏离真实环境，规则可能再次失效。应检查样本外表现和参数敏感性。",
+            "critique": true,
+            "note": "简报质疑，需核查定稿与补充材料；不声称作者未处理这一问题。"
+          },
+          {
+            "text": "可以先看下方作者公开旧稿的第 4.2.1 节和表 3：随机改变激励后，哪些行为跟着变？这是已核实的旧稿位置。正式刊物的图表编号尚未核实，不混用两版页码。"
+          },
+          {
+            "text": "可研究奖学金、平台评级等评分公开后是否引发指标替代。设计上随机调整评分信息或权重，同时观察独立结果指标；难点是把真实改善与单纯迎合区分开，并保护参与者利益。",
+            "suggestion": true,
+            "note": "阅读延伸，未做系统查重；不能只用评分本身衡量成功。"
+          }
+        ],
+        "assessment": {
+          "text": "有分量的是把激励模型与可实施的预测规则连接，再用实验检验部署表现；不能仅因“机器学习”这一标签认定贡献。",
+          "note": "我的阅读判断，非编辑或审稿意见；未做系统文献查重。"
+        },
+        "publicationType": "issue",
+        "onlineDate": null,
+        "issueDate": "2026-09",
+        "readingSources": [
+          {
+            "label": "作者公开稿（2024-07-29，非最终刊版）",
+            "url": "https://dan.bjorkegren.com/manipulation.pdf"
+          }
+        ]
+      },
+      {
+        "id": "20260914-local-projections",
+        "scope": "international",
+        "journal": "Econometrica",
+        "subject": "计量方法",
+        "title": "更窄的置信区间，真的更可靠吗？",
+        "english": "Double Robustness of Local Projections and Some Unpleasant VARithmetic",
+        "authors": "José Luis Montiel Olea · Mikkel Plagborg-Møller · Eric Qian · Christian K. Wolf",
+        "publication": "2026 年 7 月刊 · 94(4): 1313–1343 · 首次在线发表 2026-07-29",
+        "evidence": "期刊 HTML 正文：摘要、引言与第 5 节；未逐项审阅证明，公式抓取不完整。中文标题为阅读导题。",
+        "url": "https://doi.org/10.3982/ECTA23345",
+        "finding": "VAR 的区间比局部投影更窄，可能伴随模型轻微错设下的覆盖不足。",
+        "question": "如果区间很窄却经常漏掉真值，我得到的究竟是精度还是错觉？",
+        "reason": "为宏观实证里 LP 与 VAR 的选择建立有条件的判断。",
+        "keywords": "计量方法 Double Robustness of Local Projections and Some Unpleasant VARithmetic",
+        "sections": [
+          {
+            "text": "文章在局部错设框架中证明 LP 区间的一种双重稳健性质，并说明短至中等滞后长度的传统 VAR 区间可能严重覆盖不足。结论关于特定假设下的推断，不意味着 LP 在所有任务中都占优。"
+          },
+          {
+            "text": "读者关心的不应只是区间宽度，还应是它覆盖真值的频率。本文把“LP 更稳健”的直觉转为可分析的命题；宽度比较需要与模型设定风险一起看。"
+          },
+          {
+            "text": "作者将真实过程设为局部偏离 SVAR 的模型，比较两类区间的渐近性质，并在第 5.2 节用贴近石油消息冲击应用的模拟考察有限样本表现。模型假设、滞后长度与预测期数共同限定结论。"
+          },
+          {
+            "text": "我的数据是否符合这里的平稳性与局部错设设定？结构突变、弱识别或很短样本可能另有问题。应先核对适用条件，再决定是否把理论保证用于自己的回归。",
+            "critique": true,
+            "note": "这是适用性检查，不是对全文证明的反驳。"
+          },
+          {
+            "text": "先读第 5.2 节的模拟问题，再回看第 2.1 节的模型和假设；想追理论时看第 3 节。上述章节已在期刊 HTML 正文核实。公式未完整解析，正式推导建议以原文 PDF 为准。"
+          },
+          {
+            "text": "用一套公开宏观数据，在相同冲击识别下比较 LP、不同滞后 VAR 与区间覆盖的模拟表现。先复制再扩展到样本长度或结构变化；难点是现实数据没有可直接观察的“真实脉冲响应”。",
+            "suggestion": true,
+            "note": "简报延伸，不能用某个估计结果更显著来判断方法更好。"
+          }
+        ],
+        "assessment": {
+          "text": "价值在于将日常方法选择背后的误差风险说清楚，并连接理论与有限样本应用；是否适用于你的研究仍需核对假设。",
+          "note": "我的阅读判断，非编辑或审稿意见；未做系统文献查重。"
+        },
+        "publicationType": "issue",
+        "onlineDate": "2026-07-29",
+        "issueDate": "2026-07"
+      },
+      {
+        "id": "20260914-market-access",
+        "scope": "chinese",
+        "journal": "世界经济",
+        "subject": "公共与产业经济",
+        "title": "新供给创造新需求：市场准入负面清单的消费提振效应研究",
+        "english": "New Supply Creates New Demand: A Study on the Consumption Stimulating Effect of the Negative List System for Market Access",
+        "authors": "谢贞发 · 郭晨阳 · 罗芳勇",
+        "publication": "2026 年第 8 期 · 49(8): 76–112 · 刊出 2026-08-10 · 网络首发日未核实",
+        "evidence": "仅期刊官网目录摘要；文章页英文标题已核实，正文未取得。",
+        "url": "https://sjjj.magtech.com.cn/CN/Y2026/V49/I8/76",
+        "finding": "放宽市场准入可能通过服务供给和收入两条路径影响消费，而不只作用于企业。",
+        "question": "消费多了，是可以买的东西更多了，还是居民赚得更多了？",
+        "reason": "把供给侧改革与家庭行为接起来，练习拆解传导路径。",
+        "keywords": "公共与产业经济 New Supply Creates New Demand: A Study on the Consumption Stimulating Effect of the Negative List System for Market Access",
+        "sections": [
+          {
+            "text": "摘要报告负面清单制度实施后家庭消费上升，并提供服务业进入、竞争与创新以及工资收入变化等机制证据。它提示消费变化可以从供给和收入两端寻找解释。"
+          },
+          {
+            "text": "阅读理解：提振消费未必只能从补贴或转移支付切入。降低准入壁垒可能改变可获得的服务，但要判断这条链条，仍须区分产品可得性、价格与收入变化。"
+          },
+          {
+            "text": "作者使用多时点双重差分，并从企业、行业与家庭层面分析机制。摘要未披露完整样本、政策处理时点构建和具体估计器；不能仅凭 DID 名称就认定因果识别充分。"
+          },
+          {
+            "text": "改革地区是否同期推行其他服务业或收入政策？机制变量与消费一起变化，也未必证明中介因果关系。应核查试点选择、政策前趋势及各数据层次如何连接。",
+            "critique": true,
+            "note": "基于摘要提出的核查问题，不代表作者没有相应分析。"
+          },
+          {
+            "text": "取得全文后，先找政策时点与对照地区定义，再看企业进入与家庭消费的数据能否对应。不预设某张机制表已经识别了传导链条；具体图表、页码尚未核实。"
+          },
+          {
+            "text": "可追问新增生活服务更有利于哪些家庭：结合服务设施位置、家庭出行半径与消费面板，区分收入提升和可达性改善。难点是家庭迁移、商户进入自选择与消费数据的空间精度。",
+            "suggestion": true,
+            "note": "简报延伸，未核查新颖性。"
+          }
+        ],
+        "assessment": {
+          "text": "吸引力在于把准入改革从企业端追到家庭消费；贡献强弱取决于政策识别与跨层次证据能否闭合，而不是正向结果本身。",
+          "note": "我的阅读判断，非编辑或审稿意见；未做系统文献查重。"
+        },
+        "publicationType": "issue",
+        "issueDate": "2026-08-10",
+        "onlineDate": null,
+        "abstractUrl": "https://sjjj.magtech.com.cn/CN/home"
+      },
+      {
+        "id": "20260914-city-county",
+        "scope": "chinese",
+        "journal": "世界经济",
+        "subject": "区域与城市经济",
+        "title": "撤县设区是否能促进市场整合：来自异地分支机构的证据",
+        "english": "Can City-County Mergers Promote Intra-Regional Market Integration? Evidence from Cross-Location Branch Establishments",
+        "authors": "黄玖立 · 张文豪 · 张玉书",
+        "publication": "2026 年第 8 期 · 49(8): 113–156 · 刊出 2026-08-10 · 网络首发日未核实",
+        "evidence": "仅期刊官网目录摘要；文章页英文标题已核实，正文未取得。",
+        "url": "https://sjjj.magtech.com.cn/CN/Y2026/V49/I8/113",
+        "finding": "市场整合可能主要表现为外围企业向中心扩张，未必带来对称的双向流动。",
+        "question": "撤掉行政边界之后，是共同发展，还是中心吸引力更强了？",
+        "reason": "把“流动增加”与“谁吸引了谁”分开，连接市场整合与空间分配。",
+        "keywords": "区域与城市经济 Can City-County Mergers Promote Intra-Regional Market Integration? Evidence from Cross-Location Branch Establishments",
+        "sections": [
+          {
+            "text": "摘要报告撤县设区后，被撤县企业在本市设立分支机构增加，且主要呈外围到中心的单向流动。市场整合与空间均衡发展，因此不能直接画等号。"
+          },
+          {
+            "text": "阅读理解：只看异地分支机构总量会忽略方向。制度壁垒下降可能强化既有中心的吸引力；这与外围能否获得就业、收入及税基收益是不同层次的问题。"
+          },
+          {
+            "text": "作者结合全国税收调查与工商注册数据，构建总部—分支面板并使用多时点双重差分。摘要提出行政分割、市场可达性与金融配置等机制；完整样本区间和处理组规则未披露。"
+          },
+          {
+            "text": "分支数量增加是否代表真实经营活动增加，还是注册地或行政标签变化？区划调整自身也可能受增长预期影响。需要检查地理口径统一、实际就业或经营指标与政策前趋势。",
+            "critique": true,
+            "note": "待核查问题，不是对作者已完成检验的否定。"
+          },
+          {
+            "text": "全文优先看撤县前后地理单元如何保持可比，再找外围到中心与反向流动的定义。当前只有摘要，不能给出已核实的表号或页码。"
+          },
+          {
+            "text": "可进一步跟踪分支扩张后，外围原有工厂、就业和税基如何变化，区分中心服务采购与真实生产迁移。可用企业地址变更、社保与税务记录；难点是行政代码变化和多地经营归属。",
+            "suggestion": true,
+            "note": "简报延伸，尚未检索这些问题是否已有研究。"
+          }
+        ],
+        "assessment": {
+          "text": "价值在于不止问市场是否整合，还刻画流动方向；若能区分登记变更与真实经营变化，证据会更有解释力。",
+          "note": "我的阅读判断，非编辑或审稿意见；未做系统文献查重。"
+        },
+        "publicationType": "issue",
+        "issueDate": "2026-08-10",
+        "onlineDate": null,
+        "abstractUrl": "https://sjjj.magtech.com.cn/CN/home"
+      }
+    ],
+    "journalChecks": [
+      {
+        "journal": "AER",
+        "group": "国际·经济",
+        "issue": "116(9) / 2026-09",
+        "status": "官网目录已核实；本期建立目录基线",
+        "url": "https://www.aeaweb.org/issues/859",
+        "online": "Forthcoming 入口已访问；接收待刊不等同于已在线发表",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "QJE",
+        "group": "国际·经济",
+        "issue": "141(3) / 2026-08",
+        "status": "官网目录已核实；剔除试阅已解读的3篇",
+        "url": "https://academic.oup.com/qje/issue",
+        "online": "Advance articles 入口访问失败",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "JPE",
+        "group": "国际·经济",
+        "issue": "134(8)",
+        "status": "官网当前期标签已核实；未完整提取逐篇日期",
+        "url": "https://www.journals.uchicago.edu/toc/jpe/current",
+        "online": "Ahead of print 目录可读；逐篇发表日未全部核实",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "Econometrica",
+        "group": "国际·经济",
+        "issue": "94(4) / 2026-07",
+        "status": "Wiley 目录已核实",
+        "url": "https://onlinelibrary.wiley.com/toc/14680262/current",
+        "online": "Early View 入口访问失败",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "REStud",
+        "group": "国际·经济",
+        "issue": "93(5) / 标签 2026-10",
+        "status": "官网当前期已显示未来月份标签；不视为10月已经到来",
+        "url": "https://academic.oup.com/restud/issue",
+        "online": "在线目录已核实，最新可见记录2026-09-11",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "JF",
+        "group": "国际·金融",
+        "issue": "81(4) / 2026-08",
+        "status": "官网当前期已核实",
+        "url": "https://onlinelibrary.wiley.com/toc/15406261/current",
+        "online": "Early View 已核实，最新可见记录2026-09-03",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "JFE",
+        "group": "国际·金融",
+        "issue": "搜索索引显示183卷 / 2026-09（In progress）",
+        "status": "期刊正文入口访问失败；索引信息不能作为完整基线",
+        "url": "https://www.sciencedirect.com/journal/journal-of-financial-economics/vol/183/suppl/C",
+        "online": "Articles in press 访问失败",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "RFS",
+        "group": "国际·金融",
+        "issue": "39(9) / 2026-09",
+        "status": "官网目录已核实",
+        "url": "https://academic.oup.com/rfs/issue",
+        "online": "在线目录已核实；本期精选2026-09-11已接受稿",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "AMJ",
+        "group": "国际·管理",
+        "issue": "官方搜索索引：69(4) / 2026-08",
+        "status": "主页与当前期直接访问失败，不能确认完整目录",
+        "url": "https://journals.aom.org/journal/amj",
+        "online": "在线优先入口访问失败",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "AMR",
+        "group": "国际·管理",
+        "issue": "官方搜索索引：51(3) / 2026-07",
+        "status": "当前期直接访问失败；索引仅供定位",
+        "url": "https://journals.aom.org/toc/amr/current",
+        "online": "在线优先入口访问失败",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "ASQ",
+        "group": "国际·管理",
+        "issue": "71(3) / 2026-09",
+        "status": "官网目录已核实",
+        "url": "https://journals.sagepub.com/toc/asqa/current",
+        "online": "Online First 入口访问失败",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "SMJ",
+        "group": "国际·管理",
+        "issue": "47(9) / 2026-09",
+        "status": "官网首页刊期已核实；current 直链失败",
+        "url": "https://sms.onlinelibrary.wiley.com/journal/10970266",
+        "online": "Early View 已核实，最新可见记录2026-09-10",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "Management Science",
+        "group": "国际·管理",
+        "issue": "72(9) / 2026-09",
+        "status": "官网当前期已核实",
+        "url": "https://pubsonline.informs.org/toc/mnsc/current",
+        "online": "Articles in Advance 已核实，最新可见文章2026-09-10",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "经济研究",
+        "group": "国内A·经济",
+        "issue": "未核实",
+        "status": "官网入口失败；不声称无新增",
+        "url": "https://www.erj.cn/",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "世界经济",
+        "group": "国内A·经济",
+        "issue": "49(8) / 刊出2026-08-10",
+        "status": "官网7篇目录已核实，3篇试阅已解读；本期选2篇",
+        "url": "https://sjjj.magtech.com.cn/CN/home",
+        "online": "未取得独立网络首发列表；单篇在线日未知",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "中国工业经济",
+        "group": "国内A·经济",
+        "issue": "未核实",
+        "status": "官网403，目录与首发均有缺口",
+        "url": "https://ciejournal.ajcass.com/",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "金融研究",
+        "group": "国内A·经济",
+        "issue": "官网搜索索引：2026(7)，2026-07-25",
+        "status": "current 直链超时；尚不能确认是否有更新刊期",
+        "url": "https://www.jryj.org.cn/CN/1002-7246/current.shtml",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "管理世界",
+        "group": "国内A·管理",
+        "issue": "正规平台索引显示2026(8)",
+        "status": "官网超时；仅有平台索引，未建立完整基线",
+        "url": "https://www.cqvip.com/journal/95499X/95499X",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "南开管理评论",
+        "group": "国内A·管理",
+        "issue": "未核实",
+        "status": "官网与备用入口访问失败",
+        "url": "https://nbr.nankai.edu.cn/",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "公共管理学报",
+        "group": "国内A·管理",
+        "issue": "23(3) / 2026",
+        "status": "期刊知网门户当前期可读；逐篇日期未完整核实",
+        "url": "https://gggl.cbpt.cnki.net/portal",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "管理科学学报",
+        "group": "国内A·管理",
+        "issue": "平台索引最高见2026(7)",
+        "status": "官网失败，不以索引判定最新一期",
+        "url": "https://jmsc.tju.edu.cn/",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "中国行政管理",
+        "group": "国内A·管理",
+        "issue": "未核实",
+        "status": "官网访问失败",
+        "url": "https://www.cpaj.com.cn/",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "会计研究",
+        "group": "国内A·管理",
+        "issue": "未核实",
+        "status": "学会期刊浏览页可达，但未返回刊期列表",
+        "url": "https://www.asc.net.cn/AccountingResearch/BrowsePeriodical.aspx",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "中国农村经济",
+        "group": "国内A·管理",
+        "issue": "未核实",
+        "status": "已按官方迁移公告尝试新入口，访问失败",
+        "url": "https://crecrs-zgncjj.ajcass.org/",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "统计研究",
+        "group": "国内A·统计",
+        "issue": "官方门户搜索索引：43(8) / 2026",
+        "status": "门户直访失败；索引不足以确认逐篇基线",
+        "url": "https://tjyj.cbpt.cnki.net/portal",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "中国社会科学",
+        "group": "综合交叉",
+        "issue": "社科网栏目最高显示2026(6)",
+        "status": "栏目可读但可能滞后，最新刊期尚不能确认",
+        "url": "https://www.cssn.cn/dkzgxp/zgxp_zgshkx/",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "中国人民大学学报",
+        "group": "综合交叉",
+        "issue": "官网搜索索引：40(4)，2026-07-15",
+        "status": "主页直访失败，当前完整目录核验未完成",
+        "url": "https://xuebao.ruc.edu.cn/CN/home",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "教学与研究",
+        "group": "综合交叉",
+        "issue": "未核实",
+        "status": "官网入口访问失败",
+        "url": "https://jxyyj.ruc.edu.cn/CN/home",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "北京大学学报（哲社版）",
+        "group": "综合交叉",
+        "issue": "63(4) / 2026",
+        "status": "期刊门户可读；经管相关文章筛查未完成",
+        "url": "https://bdzk.cbpt.cnki.net/portal/journal/portal/client/index",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "求是",
+        "group": "综合交叉",
+        "issue": "2026(17)",
+        "status": "官网已核实；经管文章用于背景阅读，非全部为研究论文",
+        "url": "https://www.qstheory.com/index.htm",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "世界经济与政治",
+        "group": "综合交叉",
+        "issue": "未核实",
+        "status": "研究所期刊入口访问失败，搜索未取得可靠最新目录",
+        "url": "https://iwep.cssn.cn/cbw/cbw_xsqk/xsqk_sjjjyz/",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "人口研究",
+        "group": "综合交叉",
+        "issue": "50(4)，2026-07-29",
+        "status": "官网当前期已核实；逐篇筛查未完成",
+        "url": "https://rkyj.ruc.edu.cn/CN/home",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "社会学研究",
+        "group": "综合交叉",
+        "issue": "文献中心索引：2026(4)",
+        "status": "期刊官网失败，最新完整目录核验未完成",
+        "url": "https://m.ncpssd.cn/journal/details?gch=80772X&langType=1&nav=1",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      },
+      {
+        "journal": "新华文摘",
+        "group": "综合交叉·转载",
+        "issue": "未核实",
+        "status": "入口失败，未获得全文转载清单，不计作新论文",
+        "url": "https://www.xinhuawz.com/",
+        "online": "未完成独立网络首发核验",
+        "checkedAt": "2026-09-14"
+      }
+    ],
+    "directory": [
+      {
+        "title": "Stockups, Stockouts, and the Role for Strategic Reserves",
+        "journal": "REStud",
+        "group": "经济",
+        "status": "在线优先·已接受稿",
+        "date": "2026-09-11",
+        "url": "https://doi.org/10.1093/restud/rdag101"
+      },
+      {
+        "title": "From Trees to Treewidth: Inventory Management in Complex Supply Chain Networks",
+        "journal": "Management Science",
+        "group": "管理",
+        "status": "在线优先",
+        "date": "2026-09-10",
+        "url": "https://doi.org/10.1287/mnsc.2025.03155"
+      },
+      {
+        "title": "Knowledge protection and modularity of innovation activities in firms: Evidence from US trade secrecy law",
+        "journal": "SMJ",
+        "group": "管理",
+        "status": "在线优先",
+        "date": "2026-09-10",
+        "url": "https://doi.org/10.1002/smj.70125"
+      },
+      {
+        "title": "Discretionary Announcement Timing and Stock Returns",
+        "journal": "JF",
+        "group": "金融",
+        "status": "在线优先·首次基线",
+        "date": "2026-09-03",
+        "url": "https://doi.org/10.1111/jofi.70073"
+      },
+      {
+        "title": "Stablecoin Runs and the Centralization of Arbitrage",
+        "journal": "RFS",
+        "group": "金融",
+        "status": "在线优先·首次基线",
+        "date": "2026-09-03",
+        "url": "https://doi.org/10.1093/rfs/hhag072"
+      },
+      {
+        "title": "Flow",
+        "journal": "RFS",
+        "group": "金融",
+        "status": "在线优先·首次基线",
+        "date": "2026-09-01",
+        "url": "https://doi.org/10.1093/rfs/hhag080"
+      },
+      {
+        "title": "Presidential Address: Neighborhood Effects and Missing Markets for Opportunity",
+        "journal": "AER",
+        "group": "经济",
+        "status": "正式刊期·首次基线",
+        "date": "116(9)，2026-09；具体日未核实",
+        "url": "https://www.aeaweb.org/issues/859"
+      },
+      {
+        "title": "Contextually Private Mechanisms",
+        "journal": "AER",
+        "group": "经济",
+        "status": "正式刊期·首次基线",
+        "date": "116(9)，2026-09；具体日未核实",
+        "url": "https://www.aeaweb.org/issues/859"
+      },
+      {
+        "title": "Risk-Sharing Tests and Covariate Shocks: Drought, Floods, and Pests in Uganda",
+        "journal": "AER",
+        "group": "经济",
+        "status": "正式刊期·首次基线",
+        "date": "116(9)，2026-09；具体日未核实",
+        "url": "https://www.aeaweb.org/issues/859"
+      },
+      {
+        "title": "Optimal Public Transportation Networks: Evidence from the World's Largest Bus Rapid Transit System in Jakarta",
+        "journal": "AER",
+        "group": "经济",
+        "status": "正式刊期·首次基线",
+        "date": "116(9)，2026-09；具体日未核实",
+        "url": "https://doi.org/10.1257/aer.20230768"
+      },
+      {
+        "title": "Marriage, Fertility, and Cultural Integration in Italy",
+        "journal": "AER",
+        "group": "经济",
+        "status": "正式刊期·首次基线",
+        "date": "116(9)，2026-09；具体日未核实",
+        "url": "https://www.aeaweb.org/issues/859"
+      },
+      {
+        "title": "Defying Distance? The Provision of Medical Services in the Digital Age",
+        "journal": "AER",
+        "group": "经济",
+        "status": "正式刊期·首次基线",
+        "date": "116(9)，2026-09；具体日未核实",
+        "url": "https://www.aeaweb.org/issues/859"
+      },
+      {
+        "title": "The Environmental Bias of Corporate Income Taxation",
+        "journal": "AER",
+        "group": "经济",
+        "status": "正式刊期·首次基线",
+        "date": "116(9)，2026-09；具体日未核实",
+        "url": "https://www.aeaweb.org/issues/859"
+      },
+      {
+        "title": "Rationing by Race",
+        "journal": "AER",
+        "group": "经济",
+        "status": "正式刊期·首次基线",
+        "date": "116(9)，2026-09；具体日未核实",
+        "url": "https://www.aeaweb.org/issues/859"
+      },
+      {
+        "title": "Intergenerational Impacts of Secondary Education: Experimental Evidence from Ghana",
+        "journal": "AER",
+        "group": "经济",
+        "status": "正式刊期·首次基线",
+        "date": "116(9)，2026-09；具体日未核实",
+        "url": "https://www.aeaweb.org/issues/859"
+      },
+      {
+        "title": "The Effects of Mandatory Profit-Sharing on Workers and Firms: Evidence from France",
+        "journal": "QJE",
+        "group": "经济",
+        "status": "正式刊期·目录选摘",
+        "date": "141(3)，2026-08；在线2026-06-09",
+        "url": "https://doi.org/10.1093/qje/qjag022"
+      },
+      {
+        "title": "The Cost of Regulatory Compliance in the United States",
+        "journal": "RFS",
+        "group": "金融",
+        "status": "正式刊期·目录选摘",
+        "date": "39(9)，2026-09；首发日未核实",
+        "url": "https://doi.org/10.1093/rfs/hhag046"
+      },
+      {
+        "title": "The Politicization of Wage Setting",
+        "journal": "ASQ",
+        "group": "管理",
+        "status": "正式刊期·目录选摘",
+        "date": "71(3)，2026-09；在线2026-06-13",
+        "url": "https://journals.sagepub.com/toc/asqa/current"
+      },
+      {
+        "title": "Remote Work and Hiring Requirements: Cross-Country Evidence from Job Postings",
+        "journal": "ASQ",
+        "group": "管理",
+        "status": "正式刊期·目录选摘",
+        "date": "71(3)，2026-09；在线2026-05-29",
+        "url": "https://journals.sagepub.com/toc/asqa/current"
+      },
+      {
+        "title": "控制权视角下容错免责机制的政策效应及其有效性逻辑——来自政府引导基金的证据",
+        "journal": "公共管理学报",
+        "group": "管理",
+        "status": "国内中文A·目录选摘",
+        "date": "23(3)，2026；具体出版日未核实",
+        "url": "https://gggl.cbpt.cnki.net/portal"
+      },
+      {
+        "title": "金融科技创新与企业跨国供应链拓展",
+        "journal": "世界经济",
+        "group": "经济",
+        "status": "国内中文A·正式刊期基线",
+        "date": "49(8)，2026-08-10",
+        "url": "https://sjjj.magtech.com.cn/CN/Y2026/V49/I8/3"
+      },
+      {
+        "title": "公共文化资源普惠化与居民幸福感：基于博物馆发展的证据",
+        "journal": "世界经济",
+        "group": "经济",
+        "status": "国内中文A·正式刊期基线",
+        "date": "49(8)，2026-08-10",
+        "url": "https://sjjj.magtech.com.cn/CN/Y2026/V49/I8/183"
+      }
+    ],
+    "directoryNote": "近期在线记录与首次刊期基线分开标注。下列包含已核实的近期在线条目、AER与《世界经济》本期未精选且未在试阅解读的文章，以及其他期刊的相关目录选摘；不是所有跟踪刊物的完整新增清单。尚未完整提取的目录请结合逐刊核查记录查看。题目属于书目信息，不代表本期已审读该文。",
+    "recommendations": [
+      {
+        "id": "20260914-minimum-wage",
+        "reason": "先读：融资约束怎样改变最低工资的就业反应？适合把劳动和金融机制连起来。"
+      },
+      {
+        "id": "20260914-local-projections",
+        "reason": "方法精读：先看第5.2节，再回到假设，练习判断窄区间是否可信。"
+      },
+      {
+        "id": "20260914-city-county",
+        "reason": "中国情境：用流动方向检验“市场整合”的含义，再追问外围的福利变化。"
+      }
+    ],
+    "inspirations": [
+      "共同的状态变量：把融资约束视为政策传导的条件，比较工资政策与税收政策的企业反应。两篇论文的制度场景不同，不能直接比较系数；可先画出各自的预算约束与调整边际。",
+      "把结果拆成方向与构成：准入改革看消费来自供给还是收入，撤县设区看新增分支流向哪里。后续选题可先寻找能够同时观察双方的数据，避免把总量变化等同于普遍受益。",
+      "先问模型会在哪里失效：预测中的策略反应与脉冲响应中的模型错设是不同问题，但都提示需要独立验证。研究设计中预先列出反例，比事后只挑显著结果更有价值。"
+    ],
+    "baseline": {
+      "mode": "partial-first-baseline",
+      "checkedAt": "2026-09-14",
+      "completeIssueJournals": [
+        "AER",
+        "世界经济"
+      ],
+      "note": "其他期刊仍需完成逐篇日期与DOI基线；不要把首次发现时间当发表时间。",
+      "seenTitles": [
+        "Corporate Financial Constraints, Minimum Wage Policies, and Employment",
+        "Corporate Tax Cuts, Firm Growth, and Workers' Earnings",
+        "Manipulation-Robust Prediction",
+        "Double Robustness of Local Projections and Some Unpleasant VARithmetic",
+        "New Supply Creates New Demand: A Study on the Consumption Stimulating Effect of the Negative List System for Market Access",
+        "Can City-County Mergers Promote Intra-Regional Market Integration? Evidence from Cross-Location Branch Establishments",
+        "Stockups, Stockouts, and the Role for Strategic Reserves",
+        "From Trees to Treewidth: Inventory Management in Complex Supply Chain Networks",
+        "Knowledge protection and modularity of innovation activities in firms: Evidence from US trade secrecy law",
+        "Discretionary Announcement Timing and Stock Returns",
+        "Stablecoin Runs and the Centralization of Arbitrage",
+        "Flow",
+        "Presidential Address: Neighborhood Effects and Missing Markets for Opportunity",
+        "Contextually Private Mechanisms",
+        "Risk-Sharing Tests and Covariate Shocks: Drought, Floods, and Pests in Uganda",
+        "Optimal Public Transportation Networks: Evidence from the World's Largest Bus Rapid Transit System in Jakarta",
+        "Marriage, Fertility, and Cultural Integration in Italy",
+        "Defying Distance? The Provision of Medical Services in the Digital Age",
+        "The Environmental Bias of Corporate Income Taxation",
+        "Rationing by Race",
+        "Intergenerational Impacts of Secondary Education: Experimental Evidence from Ghana",
+        "The Effects of Mandatory Profit-Sharing on Workers and Firms: Evidence from France",
+        "The Cost of Regulatory Compliance in the United States",
+        "The Politicization of Wage Setting",
+        "Remote Work and Hiring Requirements: Cross-Country Evidence from Job Postings",
+        "控制权视角下容错免责机制的政策效应及其有效性逻辑——来自政府引导基金的证据",
+        "金融科技创新与企业跨国供应链拓展",
+        "公共文化资源普惠化与居民幸福感：基于博物馆发展的证据"
+      ]
+    }
+  },
+  {
+    "id": "2026-09-13-preview",
+    "label": "第 0 期 · 试阅",
+    "date": "2026-09-13",
+    "title": "本期精选 · 从约束理解经济行为",
+    "description": "最新期试阅 · 3 篇国际论文，3 篇中文论文。先看发现、追问与阅读理由，选中一篇再展开六问。",
+    "teaser": "注意力、知识传递与市场摩擦，如何改变选择和配置？",
+    "overview": [
+      "这组论文共同关注经济主体面对的约束：注意力如何形成、知识如何在同事间传递、市场价格如何传递信息，以及技术和贸易政策如何影响经济行为。它们提供了不同层次的研究切口。",
+      "阅读时可以比较作者如何将宽泛议题收缩成可回答的问题，再观察理论机制、测量与识别是否彼此对应。这是对本期所选论文的归纳，不代表整个经管领域的趋势。"
+    ],
+    "coverage": "本期为格式试阅，仅从 QJE 2026 年第 3 期（8 月）与《世界经济》2026 年第 8 期选取 6 篇，未覆盖全部跟踪期刊，也不是过去一周的新增清单。后续周报按已设定范围核查各刊更新，并保留历史期次。",
+    "sources": [
+      {
+        "label": "QJE 当期目录",
+        "url": "https://academic.oup.com/qje/issue"
+      },
+      {
+        "label": "《世界经济》当期目录与摘要",
+        "url": "https://sjjj.magtech.com.cn/CN/home"
+      }
+    ],
+    "papers": [
+      {
+        "id": "cognition",
+        "scope": "international",
+        "journal": "QJE",
+        "subject": "微观理论",
+        "title": "推理与选择的认知理论",
+        "english": "A Cognitive Theory of Reasoning and Choice",
+        "authors": "Pedro Bordalo · Nicola Gennaioli · Giacomo Lanzani · Andrei Shleifer",
+        "publication": "2026 年 8 月刊 · 在线发表 2026-06-05",
+        "evidence": "摘要与引言 · 中文标题为译名",
+        "url": "https://doi.org/10.1093/qje/qjag023",
+        "question": "看似“偏好变了”，会不会只是把同一件事理解成了另一类问题？",
+        "keywords": "行为经济学 注意力 认知 框架效应",
+        "sections": [
+          {
+            "text": "信息与偏好相同，选择仍可能不同：这个模型把差异追溯到我们如何理解眼前的问题。",
+            "note": "依据：摘要与引言 · 中文标题为译名"
+          },
+          {
+            "text": "如果把选择差异都归于偏好或信息，我们可能漏掉决策之前的一步：人把眼前情境认作什么问题。本文将问题分类与注意力联系起来，尝试用共同机制理解框架效应。这是对作者摘要与引言的概括，尚未独立比较全部相关模型。"
+          },
+          {
+            "text": "构建理论模型：决策者将当前问题归入过去处理过的问题类别，这种分类决定其对选项属性的注意力，再影响选择。",
+            "note": "尚未逐项核查证明。精读需检查分类和注意力的决定方式，以及结论对这些设定的依赖。"
+          },
+          {
+            "text": "这个机制能否给出偏好变化或其他注意力模型无法给出的预测？如果“问题分类”只能从最后的选择反推，就可能难以独立检验。需要核查分类如何决定，以及有没有不依赖选择结果的测量。",
+            "note": "这是待核查的问题，不代表已发现作者存在这一缺陷。",
+            "critique": true
+          },
+          {
+            "text": "先读引言中作者如何从选择差异引出“问题分类”，带着一个问题：模型在哪一步偏离了我熟悉的选择理论？若继续精读，优先找分类到注意力、再到选择的核心推导；具体章节、命题和页码尚未核实。"
+          },
+          {
+            "text": "可设计保持收益与信息不变、只随机改变表述情境的实验，结合注意力测量，检验变化来自问题分类还是偏好。进一步可研究过去经历如何影响政策信息的理解。",
+            "note": "难点在于分类本身难以直接观察，需要独立测量与可区分的预测。以上为阅读延伸，尚未系统检索其新颖性。",
+            "suggestion": true
+          }
+        ],
+        "finding": "信息与偏好相同，选择仍可能不同：这个模型把差异追溯到我们如何理解眼前的问题。",
+        "reason": "看一个模型怎样把问题分类、注意力和选择串成可检验的机制。",
+        "assessment": {
+          "text": "我的判断：最有分量的是用同一机制连接多种选择现象；能否与已有理论给出不同预测，是精读时最值得确认的部分。",
+          "note": "我的阅读判断，非编辑或审稿意见；依据现有阅读材料，未完成系统文献比较与全文质量核查。"
+        }
+      },
+      {
+        "id": "proximity",
+        "scope": "international",
+        "journal": "QJE",
+        "subject": "劳动经济学",
+        "title": "与同事近距离工作的作用",
+        "english": "The Power of Proximity to Coworkers",
+        "authors": "Natalia Emanuel · Emma Harrington · Amanda Pallais",
+        "publication": "2026 年 8 月刊 · 在线发表 2026-05-12",
+        "evidence": "摘要与引言 · 中文标题为译名",
+        "url": "https://doi.org/10.1093/qje/qjag027",
+        "question": "如果培养新人会降低自己的当期产出，公司如何评价一位好同事？",
+        "keywords": "人力资本 远程办公 生产率 DID 双重差分",
+        "sections": [
+          {
+            "text": "靠近同事办公可能让新人学得更多，却让指导他们的资深员工少写代码。",
+            "note": "依据：摘要与引言 · 中文标题为译名"
+          },
+          {
+            "text": "“到办公室是否提高生产率”未必有一个适用于所有人的答案。本文同时观察同事反馈与代码产出，把新人的学习收益和资深员工的指导成本放在一起。阅读判断：这提示我们，平均产出指标可能遗漏组织内部的人力资本投资。"
+          },
+          {
+            "text": "使用一家大型企业 2019—2024 年软件工程师数据，利用办公室关闭和返岗要求，比较集中与分散团队的变化，采用双重差分设计。",
+            "note": "识别需要检验不同团队是否存在差异趋势，并排查同期项目或管理变化。此处尚未完整审阅其稳健性检验。"
+          },
+          {
+            "text": "办公室关闭或返岗时，集中与分散团队是否还经历了不同的项目、管理或人员变化？这些变化也可能影响反馈与产出。需要查看政策前趋势与稳健性检验；代码数量也不能直接等同于长期生产率。",
+            "note": "这是待核查的问题，不代表已发现作者存在这一缺陷。",
+            "critique": true
+          },
+          {
+            "text": "先读引言中将学习收益与当期产出区分开的论证。继续读时，优先找办公室关闭与返岗前后，不同团队反馈和代码产出的比较，检查两个方向的变化是否支持同一机制。具体图表编号和页码尚未核实。"
+          },
+          {
+            "text": "可研究 AI 工具能否替代部分同事指导：比较有无工具、不同协作距离下，新人的即时表现与长期技能。理想设计需要企业内的随机工具或培训安排。",
+            "note": "难点是工具采用的自选择，以及如何测量离开工具后仍保留的技能。以上为阅读延伸，不是本文已证实的结论。",
+            "suggestion": true
+          }
+        ],
+        "finding": "靠近同事办公可能让新人学得更多，却让指导他们的资深员工少写代码。",
+        "reason": "把远程办公争论拆成谁获益、谁付成本，以及收益何时兑现。",
+        "assessment": {
+          "text": "我的判断：最有分量的是把组织内部的学习收益与指导成本同时呈现出来，使办公制度的讨论超出平均生产率。",
+          "note": "我的阅读判断，非编辑或审稿意见；依据现有阅读材料，未完成系统文献比较与全文质量核查。"
+        }
+      },
+      {
+        "id": "liquidity",
+        "scope": "international",
+        "journal": "QJE",
+        "subject": "宏观金融",
+        "title": "经济、流动性与信息周期",
+        "english": "Business, Liquidity, and Information Cycles",
+        "authors": "Gorkem Bostanci · Guillermo Ordoñez",
+        "publication": "2026 年 8 月刊 · 在线发表 2026-05-29",
+        "evidence": "摘要与引言 · 中文标题为译名",
+        "url": "https://doi.org/10.1093/qje/qjag029",
+        "question": "同样一次融资冲击，如果股价仍能准确传递信息，衰退会不会轻一些？",
+        "keywords": "宏观 动态一般均衡 结构估计 资本配置",
+        "sections": [
+          {
+            "text": "银行承压时，股市不仅可能更难融资，价格也可能更难传递信息，从而进一步影响资本配置。",
+            "note": "依据：摘要与引言 · 中文标题为译名"
+          },
+          {
+            "text": "融资困难不只会直接压缩资金供给。本文研究另一条渠道：流动性交易干扰价格揭示基本面，削弱信息对资本配置的帮助。作者模型中，伴随银行困境的衰退里，这一机制使产出损失放大约 22%；这是模型的损失放大幅度，不是 GDP 下降 22%。"
+          },
+          {
+            "text": "将股票交易机制嵌入异质性企业动态一般均衡模型，利用多国数据结构估计股价信息含量，并对美国校准与模拟。",
+            "note": "精读应检查信息含量指标的识别、参数约束，以及企业从股价之外获取信息的处理。"
+          },
+          {
+            "text": "企业真的如此依赖股价获取信息吗？如果银行关系、订单或其他渠道能提供替代信息，这条放大机制会弱多少？精读应检查替代信息来源、参数识别及校准敏感性，而不能把模拟结果直接当作已识别的现实因果效应。",
+            "note": "这是待核查的问题，不代表已发现作者存在这一缺陷。",
+            "critique": true
+          },
+          {
+            "text": "先读引言对“流动性功能”和“信息功能”的区分，再寻找保留与关闭该传导机制的模型反事实比较。带着问题读：模型如何把这条渠道的作用与其他金融摩擦分开？具体章节、图表和页码尚未核实。"
+          },
+          {
+            "text": "可进一步研究企业依赖银行关系或公开股价信息的程度，是否改变这一传导机制。可从融资结构不同的企业入手，或在模型中加入替代信息渠道。",
+            "note": "难点是区分流动性冲击与基本面恶化。以上为阅读延伸，尚未完成相关文献查重。",
+            "suggestion": true
+          }
+        ],
+        "finding": "银行承压时，股市不仅可能更难融资，价格也可能更难传递信息，从而进一步影响资本配置。",
+        "reason": "追踪金融摩擦如何通过价格信号传到实体经济，并理解模型反事实的作用。",
+        "assessment": {
+          "text": "我的判断：最有分量的是把交易、价格信息与实体配置连接起来，并尝试量化；说服力取决于这条机制的识别和对模型设定的稳健性。",
+          "note": "我的阅读判断，非编辑或审稿意见；依据现有阅读材料，未完成系统文献比较与全文质量核查。"
+        }
+      },
+      {
+        "id": "ai-wages",
+        "scope": "chinese",
+        "journal": "世界经济",
+        "subject": "劳动经济学",
+        "title": "生成式人工智能如何影响中国劳动力薪资",
+        "english": "The Impact of Generative Artificial Intelligence on Labour Wages in China",
+        "authors": "郑世林 · 黄晴 · 朱丽",
+        "publication": "2026 年第 8 期 · 出版 2026-08-10",
+        "evidence": "仅摘要 · 来自期刊官网当期目录；方法细节需核查全文",
+        "url": "https://sjjj.magtech.com.cn/CN/Y2026/V49/I8/214",
+        "abstractUrl": "https://sjjj.magtech.com.cn/CN/home",
+        "question": "究竟是同一种工作降薪了，还是企业开始招聘更多低薪岗位？",
+        "keywords": "人工智能 AI 招聘 工资 DID 双重差分",
+        "sections": [
+          {
+            "text": "摘要报告生成式 AI 相关冲击后招聘岗位平均薪资下降，且不同任务岗位的变化不同。",
+            "note": "依据：仅摘要 · 来自期刊官网当期目录；方法细节需核查全文"
+          },
+          {
+            "text": "“AI 提高效率”并不能直接推出劳动者工资上升。本文把问题落到中国招聘岗位的薪资和任务差异上。阅读判断：需要进一步分清劳动需求变化、岗位构成变化与同类岗位价格变化；目前仅凭摘要，尚不能判断文章如何区分这些解释。"
+          },
+          {
+            "text": "使用招聘平台岗位数据和双重差分方法。摘要没有披露完整样本区间、处理组划分及冲击定义，需核查全文。"
+          },
+          {
+            "text": "均值下降是否只是招聘岗位构成改变，而非同类工作降薪？此外，处理组如何定义，技术冲击与其他同期劳动力市场变化如何区分？这些关系到结论的解释，摘要没有提供足够信息。",
+            "note": "这是待核查的问题，不代表已发现作者存在这一缺陷。",
+            "critique": true
+          },
+          {
+            "text": "目前仅核实摘要，不能给出原文图表或页码。拿到全文后，建议先找样本构建、AI 暴露或处理组定义，再找岗位内薪资与岗位构成的分析（如有）。带着问题读：这里的“薪资影响”究竟测量了什么？"
+          },
+          {
+            "text": "可将变化拆成岗位内薪资调整与岗位结构重配，再区分新人和资深员工。可能需要连续招聘记录、岗位任务文本与实际雇佣数据的匹配。",
+            "note": "难点是岗位名称变化、企业选择性招聘，以及招聘薪资不等同于实际工资。以上为阅读延伸，非作者已核实的未来工作。",
+            "suggestion": true
+          }
+        ],
+        "finding": "摘要报告生成式 AI 相关冲击后招聘岗位平均薪资下降，且不同任务岗位的变化不同。",
+        "reason": "练习区分技术替代、任务重组与样本构成变化，避免把招聘薪资等同于实际工资。",
+        "assessment": {
+          "text": "我的初步判断：价值在于把技术讨论落实到中国岗位与任务差异；是否有说服力，要看全文能否区分技术冲击、岗位构成和其他市场变化。",
+          "note": "我的阅读判断，非编辑或审稿意见；依据现有阅读材料，未完成系统文献比较与全文质量核查。"
+        }
+      },
+      {
+        "id": "exports",
+        "scope": "chinese",
+        "journal": "世界经济",
+        "subject": "国际贸易",
+        "title": "跨境电商如何赋能“边缘企业”实现出口突围",
+        "english": "How Cross-Border E-Commerce Enables Marginal Firms to Break Through into Export Markets",
+        "authors": "吴可心 · 邱斌 · 孙少勤",
+        "publication": "2026 年第 8 期 · 出版 2026-08-10",
+        "evidence": "仅摘要 · 来自期刊官网当期目录；识别细节需核查全文",
+        "url": "https://sjjj.magtech.com.cn/CN/Y2026/V49/I8/37",
+        "abstractUrl": "https://sjjj.magtech.com.cn/CN/home",
+        "question": "弱势企业追赶，是政策减轻了扩张约束，还是低起点后的自然回升？",
+        "keywords": "出口 多产品 异质性企业 跨境电商 DID",
+        "sections": [
+          {
+            "text": "摘要报告，跨境电商政策下，初始出口能力较弱的企业在既定目的地的出口扩张更明显。",
+            "note": "依据：仅摘要 · 来自期刊官网当期目录；识别细节需核查全文"
+          },
+          {
+            "text": "进入海外市场和进入后持续扩张是两件事。本文将关注点放到较弱企业在既定目的地的成长。阅读判断：这有助于追问政策究竟降低了进入成本还是后续扩张成本；完整机制与文献贡献仍需核查全文。"
+          },
+          {
+            "text": "结合多产品异质性企业框架，以跨境电商政策为冲击，构建企业—目的地—年份层面的双重差分。处理组具体定义需核查全文。"
+          },
+          {
+            "text": "“边缘企业”是否完全用政策前信息定义？按较低初始表现分组后，即使没有政策，也可能看到均值回归。需要查看分组方式、政策前趋势与同期政策处理，才能判断异质性结果说明了什么。",
+            "note": "这是待核查的问题，不代表已发现作者存在这一缺陷。",
+            "critique": true
+          },
+          {
+            "text": "目前仅核实摘要。拿到全文后，先找“边缘企业”的定义与政策处理组构建，再找对产品数量、单品销售或其他扩张渠道的分析（如有）。阅读目标是区分“谁增长”和“为什么增长”；具体章节与图表位置尚未核实。"
+          },
+          {
+            "text": "可继续区分产品增加、旧产品替换与目的地内销售增长，并跟踪增长是否持续。企业—产品—目的地的多年海关记录可能支持这种分解。",
+            "note": "难点包括数据可得性、样本选择与同期政策干扰。以上为阅读延伸，未证明这些问题尚无人研究。",
+            "suggestion": true
+          }
+        ],
+        "finding": "摘要报告，跨境电商政策下，初始出口能力较弱的企业在既定目的地的出口扩张更明显。",
+        "reason": "从“有没有出口”走到“进入后怎样成长”，学习拆解贸易扩张的不同渠道。",
+        "assessment": {
+          "text": "我的初步判断：有价值的切口是弱势企业进入后的扩张约束；理论能否区分渠道、证据能否排除均值回归，决定这一切口的说服力。",
+          "note": "我的阅读判断，非编辑或审稿意见；依据现有阅读材料，未完成系统文献比较与全文质量核查。"
+        }
+      },
+      {
+        "id": "measurement",
+        "scope": "chinese",
+        "journal": "世界经济",
+        "subject": "测量与方法",
+        "title": "中国 ESG 研究中的数据分歧与误差校正",
+        "english": "Data Divergence and Measurement Error Correction in China's ESG Research",
+        "authors": "范子英 · 谭伟杰 · 孙俊秀 · 郭峰",
+        "publication": "2026 年第 8 期 · 出版 2026-08-10",
+        "evidence": "仅摘要 · 来自期刊官网当期目录；校正方法细节需核查全文",
+        "url": "https://sjjj.magtech.com.cn/CN/Y2026/V49/I8/157",
+        "abstractUrl": "https://sjjj.magtech.com.cn/CN/home",
+        "question": "把不同评级调得更一致，就一定更接近真实的 ESG 表现吗？",
+        "keywords": "ESG 测量误差 数据 复现 稳健性",
+        "sections": [
+          {
+            "text": "同样研究 ESG，仅更换评级数据来源，结论就可能发生变化；摘要据此提出误差校正方法。",
+            "note": "依据：仅摘要 · 来自期刊官网当期目录；校正方法细节需核查全文"
+          },
+          {
+            "text": "把某个 ESG 评级当成稳定的企业属性，可能忽略不同数据商的定义和测量差异。本文比较数据来源并尝试校正。阅读判断：评级不一致可能来自误差，也可能来自概念不同；前者需要校正，后者可能需要重新界定研究问题。"
+          },
+          {
+            "text": "作者比较多家评级数据、复现研究，并提出基于行业排名的非线性误差校正。公式与验证条件需核查全文。"
+          },
+          {
+            "text": "校正后的指标凭什么更可信？不同评级更一致，并不自动意味着更接近真实表现。应核查校正假设，以及是否存在独立的环境或治理结果作为外部验证；仅从摘要尚不能判断。",
+            "note": "这是待核查的问题，不代表已发现作者存在这一缺陷。",
+            "critique": true
+          },
+          {
+            "text": "目前仅核实摘要。拿到全文后，先找替换数据来源前后的结果比较，再读误差校正的假设与验证部分。带着问题读：它提高的是供应商之间的一致性，还是指标的外部有效性？具体公式、图表和页码尚未核实。"
+          },
+          {
+            "text": "可引入独立的环境或治理结果检验校正后指标的外部效度，再测试结论能否跨行业成立。类似思路也可用于 AI 暴露度等文本指标。",
+            "note": "难点是缺少可充当真值的外部标准。以上为阅读延伸，非作者已经验证的结果。",
+            "suggestion": true
+          }
+        ],
+        "finding": "同样研究 ESG，仅更换评级数据来源，结论就可能发生变化；摘要据此提出误差校正方法。",
+        "reason": "在跑回归之前，先问核心变量测量的究竟是不是同一个概念。",
+        "assessment": {
+          "text": "我的初步判断：价值在于揭示研究结论对数据供应商的依赖并提供处理思路；校正是否具有外部效度，是关键门槛。",
+          "note": "我的阅读判断，非编辑或审稿意见；依据现有阅读材料，未完成系统文献比较与全文质量核查。"
+        }
+      }
+    ]
+  }
+];
+</script><script>'use strict';
+const $=id=>document.getElementById(id);
+const escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeURL=s=>{try{const u=new URL(s);return u.protocol==='https:'?escapeHTML(u.href):'#';}catch{return '#';}};
+const questions=['这篇文章最值得我知道的一件事是什么？','它在挑战什么观点，或者解决什么争论？','作者凭什么让我相信？','我最应该质疑哪里？','如果只读原文的一部分，我该读哪里？','它能给我的研究带来什么？'];
+const shortQuestions=['核心发现','学术争论','关键证据','值得质疑','原文导读','研究启发'];
+const issues=window.WEEKLY_ISSUES||[];
+let issue=issues[0],scope='all',subject='all',query='',selected=null,visible=[];
+function paperLink(p){return `<a class="source-link" href="${safeURL(p.url)}" target="_blank" rel="noopener noreferrer">阅读原文 ↗</a>`;}
+function initIssue(){
+ if(!issue){$('main').innerHTML='<p>暂无可阅读的周报。</p>';return;}
+ $('issueDate').textContent='截至 '+issue.date;
+ $('issueEyebrow').textContent=issue.label+' / '+issue.date;
+ $('issueTitle').textContent=issue.title;$('issueDescription').textContent=issue.description;
+ $('issueCount').textContent=issue.papers.length;
+ $('overviewTeaser').textContent=issue.teaser;
+ $('overviewBody').innerHTML=issue.overview.map(x=>`<p>${escapeHTML(x)}</p>`).join('');
+ $('coverageBody').innerHTML=`<p>${escapeHTML(issue.coverage)}</p><p>${issue.sources.map(x=>`<a href="${safeURL(x.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(x.label)} ↗</a>`).join('　')}</p>`;
+ $('countAll').textContent=issue.papers.length;$('countInternational').textContent=issue.papers.filter(p=>p.scope==='international').length;$('countChinese').textContent=issue.papers.filter(p=>p.scope==='chinese').length;
+ $('subjectSelect').innerHTML='<option value="all">全部方向</option>'+[...new Set(issue.papers.map(p=>p.subject))].map(x=>`<option value="${escapeHTML(x)}">${escapeHTML(x)}</option>`).join('');
+ renderExtras();
+ resetFilters();
+}
+function renderExtras(){
+ const el=$('issueExtras');
+ el.hidden=!issue.directory&&!issue.journalChecks;
+ const link=x=>`<a href="${safeURL(x.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(x.title||x.journal)} ↗</a>`;
+ const directory=(issue.directory||[]);
+ const groups=[['近期在线优先与首次在线基线',x=>x.status.startsWith('在线')],['国内中文 A 刊目录',x=>x.status.startsWith('国内')],['国际正式刊期目录',x=>!x.status.startsWith('在线')&&!x.status.startsWith('国内')]];
+ el.innerHTML=`<details open><summary>最值得精读的 3 篇</summary><ol>${(issue.recommendations||[]).map(x=>{const p=issue.papers.find(p=>p.id===x.id);return p?`<li><button class="recommendation" data-paper-id="${escapeHTML(p.id)}">${escapeHTML(p.title)} →</button><p>${escapeHTML(x.reason)}</p></li>`:'';}).join('')}</ol></details><details><summary>更多文章目录 · ${directory.length} 篇</summary><p>${escapeHTML(issue.directoryNote||'')}</p>${groups.map(([title,filter])=>{const entries=directory.filter(filter);return entries.length?`<h3>${title}</h3>${['经济','金融','管理'].map(group=>{const rows=entries.filter(x=>x.group===group);return rows.length?`<h4>${group}</h4><ul>${rows.map(x=>`<li>${link(x)}<p>${escapeHTML(x.journal)} · ${escapeHTML(x.status)} · ${escapeHTML(x.date)}</p></li>`).join('')}</ul>`:'';}).join('')}`:'';}).join('')}</details><details><summary>逐刊核查与覆盖缺口 · ${(issue.journalChecks||[]).length} 刊</summary><p>访问失败或尚未完成核验，不代表该刊没有新增文章。</p><ul>${(issue.journalChecks||[]).map(x=>`<li>${link(x)} · ${escapeHTML(x.group)}<p>${escapeHTML(x.issue)} · ${escapeHTML(x.status)}</p>${x.online?`<p>在线优先：${escapeHTML(x.online)}</p>`:''}</li>`).join('')}</ul></details><details><summary>从本期延伸的研究问题</summary><p>以下为简报的阅读延伸，不是作者已验证的结论。</p><ol>${(issue.inspirations||[]).map(x=>`<li>${escapeHTML(x)}</li>`).join('')}</ol></details>`;
+ el.onclick=e=>{const b=e.target.closest('button[data-paper-id]');if(b){resetFilters();selectPaper(b.dataset.paperId,true);}};
+}
+function renderList(){
+ visible=issue.papers.filter(p=>(scope==='all'||p.scope===scope)&&(subject==='all'||p.subject===subject)&&[p.title,p.english,p.authors,p.keywords,p.subject,p.journal].join(' ').toLocaleLowerCase().includes(query.toLocaleLowerCase()));
+ if(!visible.some(p=>p.id===selected))selected=null;
+ $('main').classList.toggle('reading',!!selected);
+ $('resultCount').textContent=`${visible.length} 篇论文`;$('reset').hidden=scope==='all'&&subject==='all'&&!query;$('empty').hidden=!!visible.length;
+ $('paperList').innerHTML=visible.map(p=>`<button class="paper-card" data-id="${escapeHTML(p.id)}" aria-current="${p.id===selected}"><span class="card-top"><span>${escapeHTML(p.journal)} · ${p.scope==='chinese'?'中文 A 刊':'国际期刊'}</span><span class="card-number">${String(issue.papers.indexOf(p)+1).padStart(2,'0')}</span></span>${p.publicationType?`<span class="card-reason">${p.publicationType==='online'?'在线优先':'正式刊期'} · ${escapeHTML(p.onlineDate||p.issueDate||'日期见原文')}</span>`:''}<span class="card-title">${escapeHTML(p.title)}</span><span class="card-finding"><span class="card-label">核心发现</span>${escapeHTML(p.finding)}</span><span class="card-question"><span class="card-label">值得追问</span>${escapeHTML(p.question)}</span><span class="card-reason"><span class="card-label">为什么读</span>${escapeHTML(p.reason)}</span><span class="card-bottom"><span class="card-tag">${escapeHTML(p.subject)}</span><span>打开六问 →</span></span></button>`).join('');
+ renderReader();
+}
+function renderReader(){
+ const p=visible.find(p=>p.id===selected);
+ if(!p){$('reader').innerHTML=visible.length?'<div class="reader-placeholder"><span class="eyebrow">从一个好问题开始</span><h2>哪一个发现让你想追问？</h2><p>选择一篇论文，继续看它的争论、证据、疑点和研究启发。</p></div>':'<div class="reader-placeholder"><p>筛选结果为空</p><p>清除筛选后继续阅读。</p></div>';return;}
+ const index=visible.indexOf(p);
+ $('reader').innerHTML=`<button class="back-button" id="back">← 返回论文目录</button><div class="reader-top"><span>${escapeHTML(p.subject)} / ${escapeHTML(p.journal)}</span>${paperLink(p)}</div><h2 id="paperTitle">${escapeHTML(p.title)}</h2><p class="english-title">${escapeHTML(p.english)}</p><p class="authors">${escapeHTML(p.authors)}</p><p class="publication">${escapeHTML(p.publication)}</p><div class="evidence">阅读依据：${escapeHTML(p.evidence)}${p.abstractUrl?` · <a href="${safeURL(p.abstractUrl)}" target="_blank" rel="noopener noreferrer">摘要来源 ↗</a>`:''}</div>${(p.readingSources||[]).map(x=>`<p class="evidence"><a href="${safeURL(x.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(x.label)} ↗</a></p>`).join('')}<nav class="question-nav" aria-label="跳转到解读问题">${shortQuestions.map((q,i)=>`<a href="#question-${i+1}">${i+1}. ${q}</a>`).join('')}</nav>${p.sections.map((s,i)=>`<section class="question-section" id="question-${i+1}"><div class="question-heading"><span class="question-number" aria-hidden="true">0${i+1}</span><h3>${questions[i]}</h3></div>${s.assessment?'<span class="research-note">我的判断 · 非编辑或审稿意见</span>':''}${s.critique?'<span class="research-note">阅读质疑 · 待核查</span>':''}${s.suggestion?'<span class="research-note">阅读延伸 · 待验证</span>':''}<p>${escapeHTML(s.text)}</p>${s.note?`<p class="aside-note">${escapeHTML(s.note)}</p>`:''}</section>`).join('')}<aside class="publication-assessment"><h3>我怎么看它的发表价值</h3><p>${escapeHTML(p.assessment.text)}</p><p class="aside-note">${escapeHTML(p.assessment.note)}</p></aside><div class="reader-bottom"><button id="previous" ${index===0?'disabled':''}>← 上一篇</button><span>${index+1} / ${visible.length}</span><button id="next" ${index===visible.length-1?'disabled':''}>下一篇 →</button></div>`;
+ $('back').onclick=()=>{const previousId=selected;selected=null;renderList();$('paperList').querySelector(`[data-id="${previousId}"]`)?.focus();};
+ $('previous').onclick=()=>selectPaper(visible[index-1].id,true);$('next').onclick=()=>selectPaper(visible[index+1].id,true);
+}
+function selectPaper(id,focus){selected=id;renderList();$('main').classList.add('reading');if(focus){$('reader').focus({preventScroll:true});$('reader').scrollIntoView({behavior:'auto',block:'start'});}}
+function resetFilters(){selected=null;scope='all';subject='all';query='';$('search').value='';$('subjectSelect').value='all';document.querySelectorAll('[data-scope]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.scope===scope)));$('main').classList.remove('reading');renderList();}
+$('issueSelect').innerHTML=issues.map(i=>`<option value="${escapeHTML(i.id)}">${escapeHTML(i.label)}</option>`).join('');
+$('issueSelect').onchange=e=>{issue=issues.find(i=>i.id===e.target.value);initIssue();};
+$('search').oninput=e=>{query=e.target.value.trim();$('main').classList.remove('reading');renderList();};
+$('subjectSelect').onchange=e=>{subject=e.target.value;$('main').classList.remove('reading');renderList();};
+$('scopes').onclick=e=>{const b=e.target.closest('button[data-scope]');if(!b)return;scope=b.dataset.scope;document.querySelectorAll('[data-scope]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));$('main').classList.remove('reading');renderList();};
+$('paperList').onclick=e=>{const b=e.target.closest('button[data-id]');if(b)selectPaper(b.dataset.id,true);};
+$('reset').onclick=resetFilters;$('emptyReset').onclick=resetFilters;
+initIssue();
+</script></body>
+</html>
