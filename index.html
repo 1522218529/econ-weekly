@@ -58,6 +58,839 @@
   </div>
 <script>window.WEEKLY_ISSUES = [
   {
+    "id": "2026-10-26",
+    "label": "第 6 期 · 正式周报",
+    "date": "2026-10-26",
+    "title": "信息如何变成决策：从IV权重到保险补贴",
+    "description": "国际4篇＋国内中文A刊1篇（国内缺1篇） · 10月19—26日新增窗口 · 4份公开稿PDF已保存。",
+    "teaser": "多听专家为何未必更稳？显著的IV系数是什么？海淘与保险又怎样改变他人的行为？",
+    "overview": [
+      "本期从“如何相信信息”读到“信息如何改变市场”。两篇REStud分别检查信息聚合和因果解释的边界：不知道专家之间的相关性，多份建议未必提高保底收益；工具变量在组间推动方向不同，一个显著系数也未必是可解释的平均因果效应。两者都提醒我们，结论依赖的不只是信息数量，还有信息之间的结构。",
+      "QJE的两篇研究把视角推进到外溢：消费者购买帮助商家学习需求，保险补贴则可能节约灾后救助。国内案例关注制度如何变成一线行动能力。它们的证据从理论推导、工具变量到过程追踪各不相同，不能凭这一组论文概括领域趋势。四篇国际论文已有公开稿辅助阅读；国内仅据摘要，另一国内名额因未核实足够合格新增保留空缺。"
+    ],
+    "coverage": "截至2026-10-26；对照10月19日成功简报及所有历史精选/目录，按DOI和题名去重。34刊入口均已尝试，访问失败与滞后目录详列，不能视为完整普查。中文A等级依据人大公开2017年修订试行目录，不等同现行毕业或评奖认定。",
+    "sources": [
+      {
+        "label": "REStud在线目录",
+        "url": "https://academic.oup.com/restud/advance-articles"
+      },
+      {
+        "label": "QJE在线目录",
+        "url": "https://academic.oup.com/qje/advance-articles"
+      },
+      {
+        "label": "公共管理学报网络首发",
+        "url": "https://gggl.cbpt.cnki.net/portal"
+      },
+      {
+        "label": "人大公开2017年核心期刊目录",
+        "url": "https://lib.ruc.edu.cn/docs/2023-11/6e83e72e2492425294dece57eb0138da.pdf"
+      }
+    ],
+    "papers": [
+      {
+        "id": "20261026-iv",
+        "title": "IV 显著了，但它真的是谁的因果效应？",
+        "english": "When Should We (Not) Interpret Linear IV Estimands as LATE?",
+        "authors": "Tymon Słoczyński（作者公开稿拼写；期刊页面作 Słoczyńki）",
+        "journal": "REStud",
+        "subject": "计量与因果识别",
+        "doi": "10.1093/restud/rdag116",
+        "url": "https://doi.org/10.1093/restud/rdag116",
+        "scope": "international",
+        "publicationType": "online",
+        "onlineDate": "2026-10-21",
+        "issueDate": "",
+        "publication": "在线发表·接受稿 2026-10-21；正式卷期未核实",
+        "finding": "工具变量在不同组推动处理的方向不同时，常用线性IV可能带有负权重。",
+        "question": "控制了协变量，为什么仍不能直接把系数叫作LATE？",
+        "reason": "从权重公式出发检查自己的工具变量设计。",
+        "keywords": [
+          "计量与因果识别"
+        ],
+        "sections": [
+          {
+            "text": "当识别需要协变量，而工具变量对处理的影响在组间方向不同，常用的无交互线性IV可能不是条件LATE的凸组合。此时，即使各组处理效应同号，汇总系数也可能异号；这是一项有明确假设的理论结论，不是对所有IV研究的否定。"
+          },
+          {
+            "text": "关键区别是“每个协变量组内单调”与“所有组朝同一方向变化”。作者重新审视线性IV的因果解释，并指出Angrist和Imbens的交互工具规格在弱单调条件下可避免负权重。避免负权重也不等于恢复研究者想要的总体LATE：两者的加权对象仍可能不同。"
+          },
+          {
+            "text": "公开稿定理3.3推导常用规格的权重，定理3.2给出交互规格的非负权重，再用费城审前羁押数据展示差异。应用借助保释法官分配，但总体“更宽松”的法官未必对每类案件都更宽松。理论还依赖工具有效性、单调性及相应规格条件；应用中作者另检验交互工具的强度。"
+          },
+          {
+            "text": "我最想检查分组选择与有限样本的关系：更细的交互可能修正规格，却制造稀疏单元和弱识别。作者已做模拟并讨论jackknife估计与弱识别预检，因此不能说未处理这一点；阅读时应核对自己的样本量、分组规模和工具强度是否落在可用范围。",
+            "critique": true,
+            "note": "阅读质疑，非已证实的缺陷。"
+          },
+          {
+            "text": "先读2026年4月arXiv修订稿的定理3.2（PDF第9页）和定理3.3（第11页），对照权重为何由平方项变为可能带符号的项；再读第4.2节的法官应用及表6（第23页）。这些位置对应公开稿，不能当作期刊排版页码。"
+          },
+          {
+            "text": "可对一个现有政策IV复现做“第一阶段方向审计”：按政策前特征分组，展示条件第一阶段、组权重与交互规格结果，同时报告弱识别诊断。难点是预先合理分组和数据稀疏；事后挑选让结果好看的分组会削弱说服力。",
+            "suggestion": true,
+            "note": "简报延伸，未经系统文献查重。"
+          }
+        ],
+        "assessment": {
+          "text": "最有价值的是把一个常见的解释习惯转化为可检查的权重条件，并连接实际估计。质量关键在于理论条件与应用中的分组、工具强度能否对应。",
+          "note": "我的阅读判断，非编辑或审稿意见。"
+        },
+        "evidence": "期刊摘要和元数据；已阅读arXiv v8公开稿的定理3.2、3.3、模拟讨论与第4节。",
+        "pdfStatus": "已保存54页arXiv v8公开稿（2026-04-29修订）；未取得期刊接受稿PDF。",
+        "readingSources": [
+          {
+            "label": "人大图书馆机构资源（需登录；进入全文库按题名查找PDF）",
+            "url": "https://lib.ruc.edu.cn/"
+          },
+          {
+            "label": "期刊原文与元数据",
+            "url": "https://doi.org/10.1093/restud/rdag116"
+          },
+          {
+            "label": "PDF：arXiv公开稿v8（非期刊版）",
+            "url": "https://arxiv.org/pdf/2011.06695v8"
+          }
+        ]
+      },
+      {
+        "id": "20261026-aggregation",
+        "title": "多听几位专家，为什么未必更稳妥？",
+        "english": "Robust Aggregation of Correlated Information",
+        "authors": "Henrique de Oliveira；Yuhta Ishii；Xiao Lin",
+        "journal": "REStud",
+        "subject": "微观理论与信息",
+        "doi": "10.1093/restud/rdag117",
+        "url": "https://doi.org/10.1093/restud/rdag117",
+        "scope": "international",
+        "publicationType": "online",
+        "onlineDate": "2026-10-21",
+        "issueDate": "",
+        "publication": "在线发表·接受稿 2026-10-21；正式卷期未核实",
+        "finding": "在两状态、两行动且来源相关性完全未知的模型中，只用最佳单一来源即可达到最优保底收益。",
+        "question": "多份看似可靠的信息，会不会只是同一条信息的不同回声？",
+        "reason": "学习把“相关性不知道”写进决策问题，而不是假设独立。",
+        "keywords": [
+          "微观理论与信息"
+        ],
+        "sections": [
+          {
+            "text": "作者研究各来源本身的准确性已知、来源之间相关性未知的决策。在两状态、两行动情形，只用最佳单一来源即可达到稳健最优收益。这里的最优是最大化最坏相关结构下的保底收益，不是说现实中多收信息总会降低平均表现。"
+          },
+          {
+            "text": "我的阅读重点是信息聚合中的重复计算问题：如果不知道两位专家是否基于同一材料，简单叠加信心未必有依据。论文给出忽略信息的一种理性解释，并把二元结论推广为更复杂决策中的任务分解与来源专长分工。"
+          },
+          {
+            "text": "公开稿第2节固定边际信号分布，让所有相容的联合分布进入不确定集合。定理1利用二元环境中的信息结构和线性优化证明单一最佳来源足够；更复杂的行动集合则不再普遍满足“一家就够”。唯一性还需满支撑和唯一最佳来源等额外条件。"
+          },
+          {
+            "text": "关键边界是“不知道相关性”究竟有多彻底。若已有重复数据能约束相关结构，把全部相容分布都当作可能会过于保守。作者第7.1节已讨论部分相关知识；值得比较缩小不确定集合后，多来源的价值何时重新出现。",
+            "critique": true,
+            "note": "阅读质疑，非已证实的缺陷。"
+          },
+          {
+            "text": "先读公开稿第2节（PDF第7页）看清max-min问题，再读第4.1节与定理1（第13—14页）；第7.1节（第28页起）帮助检查相关性知识的边界。公开稿正文标2026年9月，arXiv v3提交修订为10月4日。"
+          },
+          {
+            "text": "可以设计多模型建议实验：给受试者若干准确率相同、训练信息重合度不同的预测，再随机披露来源重合程度，观察采纳权重。难点是把相关性认知与信任、理解成本分开；这会检验模型的行为含义，而不是直接验证抽象定理。",
+            "suggestion": true,
+            "note": "简报延伸，未经系统文献查重。"
+          }
+        ],
+        "assessment": {
+          "text": "贡献在于明确区分边际可靠性与联合相关性，并得到可解释的最优策略。应用价值取决于真实决策者面对的不确定集合是否接近模型设定。",
+          "note": "我的阅读判断，非编辑或审稿意见。"
+        },
+        "evidence": "期刊摘要和元数据；已阅读arXiv v3的模型、定理1、第4.2节与第7.1节。",
+        "pdfStatus": "已保存64页arXiv v3公开稿；期刊页面标开放获取，但本次未保存出版社接受稿。",
+        "readingSources": [
+          {
+            "label": "人大图书馆机构资源（需登录；进入全文库按题名查找PDF）",
+            "url": "https://lib.ruc.edu.cn/"
+          },
+          {
+            "label": "期刊原文与元数据",
+            "url": "https://doi.org/10.1093/restud/rdag117"
+          },
+          {
+            "label": "PDF：arXiv v3公开稿（2026-10-04修订）",
+            "url": "https://arxiv.org/pdf/2106.00088v3"
+          }
+        ]
+      },
+      {
+        "id": "20261026-products",
+        "title": "你先海淘的新商品，怎样出现在街边商店？",
+        "english": "How New Products Enter Markets: Social Networks, Consumer Imports, and Retailer Learning",
+        "authors": "David Argente；Esteban Méndez；Diana Van Patten",
+        "journal": "QJE",
+        "subject": "国际贸易与社会网络",
+        "doi": "10.1093/qje/qjag052",
+        "url": "https://doi.org/10.1093/qje/qjag052",
+        "scope": "international",
+        "publicationType": "online",
+        "onlineDate": "2026-10-22",
+        "issueDate": "",
+        "publication": "在线发表·接受稿 2026-10-22；正式卷期未核实",
+        "finding": "消费者之间的进口扩散，还会向本地零售商传递潜在需求信息。",
+        "question": "商家是在模仿海外潮流，还是从身边顾客身上学习？",
+        "reason": "学习将消费者网络、需求冲击与企业供给反应连成可检验的链条。",
+        "keywords": [
+          "国际贸易与社会网络"
+        ],
+        "sections": [
+          {
+            "text": "研究在哥斯达黎加连接个人进口、社会网络与零售商数据，发现新商品沿消费者关系传播，继而影响当地商家的进口品种。消费者的早期购买既是自己的消费，也可能为商家提供需求信息；结论来自特定跨境购物环境，不能直接泛化到所有产品创新。"
+          },
+          {
+            "text": "值得追问的不只是信息如何改变一个人的购买，而是需求扩散如何改变本地商品可得性。论文把消费者间的直接外溢与消费者到企业的间接外溢区分开，并尝试区分商家“知道某商品存在”和“学到本地需求大小”。"
+          },
+          {
+            "text": "2026年9月公开稿使用美国城市的产品支出变化，经海外亲属关系构造消费者暴露，再检验同事、邻居、朋友及零售商的反应。第5节还结合零售商服务范围与700家商店调查检查学习机制。识别依赖海外变化不通过其他渠道直接影响本地结果，而非仅凭网络内购买相关性。"
+          },
+          {
+            "text": "我最关心排除限制：海外产品变化能否同时通过广告、供货或侨汇影响本地商家？作者已加入多维固定效应并做网络与服务范围检验；仍应核查这些证据排除了哪些直接渠道。商家调查支持机制，但不能单独替代因果识别。",
+            "critique": true,
+            "note": "阅读质疑，非已证实的缺陷。"
+          },
+          {
+            "text": "先看NBER修订稿图1与第4.1节（PDF第17页），沿A、B、C三步找出冲击传递路径；再读表4（第38页）和第5.2节调查（第40页起），判断“需求学习”的证据。页码对应2026年9月修订稿。"
+          },
+          {
+            "text": "可研究跨境电商消费者的购买是否带动线下小商家选品：连接消费者暴露、门店商品上架和商圈范围，寻找外部促销或物流开通带来的变化。主要难点是平台数据权限，以及冲击同时改变消费者需求与商家进货成本。",
+            "suggestion": true,
+            "note": "简报延伸，未经系统文献查重。"
+          }
+        ],
+        "assessment": {
+          "text": "最有分量的是把个人网络与企业供给反应连接起来，并为学习机制寻找独立材料。发表价值取决于外部冲击的排除限制和服务范围测量是否可信。",
+          "note": "我的阅读判断，非编辑或审稿意见。"
+        },
+        "evidence": "期刊摘要及元数据；已阅读NBER 35104修订稿第2、4、5节与图1、表4。",
+        "pdfStatus": "已保存96页NBER工作稿（2026年4月，9月修订）；非期刊接受稿。",
+        "readingSources": [
+          {
+            "label": "人大图书馆机构资源（需登录；进入全文库按题名查找PDF）",
+            "url": "https://lib.ruc.edu.cn/"
+          },
+          {
+            "label": "期刊原文与元数据",
+            "url": "https://doi.org/10.1093/qje/qjag052"
+          },
+          {
+            "label": "PDF：NBER 35104公开稿（2026年9月修订）",
+            "url": "https://www.nber.org/papers/w35104.pdf"
+          }
+        ]
+      },
+      {
+        "id": "20261026-flood",
+        "title": "保费按风险定价，为什么仍可能需要补贴？",
+        "english": "Optimal Flood Insurance in a Second-Best World: Fiscal Spillovers, Reclassification Risk, and Moral Hazard",
+        "authors": "Jonathan Gruber；Adam Solomon",
+        "journal": "QJE",
+        "subject": "公共经济学与气候风险",
+        "doi": "10.1093/qje/qjag051",
+        "url": "https://doi.org/10.1093/qje/qjag051",
+        "scope": "international",
+        "publicationType": "online",
+        "onlineDate": "2026-10-22",
+        "issueDate": "",
+        "publication": "在线发表·接受稿 2026-10-22；正式卷期未核实",
+        "finding": "减少保险补贴可能降低投保，转而增加灾后救助负担，并暴露家庭于未来保费变化风险。",
+        "question": "取消补贴省下的保费支出，会不会从救灾预算里花回来？",
+        "reason": "学习把行为反应与财政外溢放进同一福利计算。",
+        "keywords": [
+          "公共经济学与气候风险"
+        ],
+        "sections": [
+          {
+            "text": "论文把美国洪水保险的事前补贴、灾后救助与气候风险重新定价放在同一框架。最新期刊摘要给出的最优补贴为51%，这是模型结合估计参数的政策量化结果，不是实验直接估出的补贴效应；已取得的2026年7月工作稿报告52%，两版须分开。"
+          },
+          {
+            "text": "风险定价能减少高风险地区建设和防灾不足，但减少投保也可能把费用转移给灾后救助，并让家庭承担未来保费上升风险。本文讨论的是这些边际收益与成本的共同权衡，不意味着任何补贴都优于风险定价。"
+          },
+          {
+            "text": "工作稿用邻县过去洪灾提高风险显著性所带来的投保变化，识别投保对灾后财政支出的影响；用RR2.0改革后的保单内价格变化估计续保需求，再把风险重新分类、减灾和迁居等参数放入模型。每个参数都有不同识别条件，不能把整套量化当作一个随机实验。"
+          },
+          {
+            "text": "最值得核查的是邻县洪灾是否还通过防灾准备、资金分配等渠道影响本县救助。作者已报告政治因素、灾损度量和救灾预算方面的稳健性分析；另一个重要边界是长期迁居和建设反应，短期响应较小不保证长期道德风险也小。",
+            "critique": true,
+            "note": "阅读质疑，非已证实的缺陷。"
+          },
+          {
+            "text": "先读工作稿第3节的福利框架，再读第4.2节（PDF第18—20页）看投保工具变量，第5节（第21页）看需求识别，最后看第9节与表6（第51页）的敏感性。该页码和52%基准仅属于下载的工作稿；在线版51%的详细更新尚未核实。"
+          },
+          {
+            "text": "可研究地方巨灾保险是否减少临时财政救助：将保单、受灾程度和分项救助支出连接，并利用分期试点或明确资格规则。难点是试点倾向高风险地区、救助口径变化，以及短期财政节约不等于总体福利提高。",
+            "suggestion": true,
+            "note": "简报延伸，未经系统文献查重。"
+          }
+        ],
+        "assessment": {
+          "text": "价值在于把通常分开讨论的保险市场与灾后财政支出统一量化。最关键的质量条件是外溢识别可靠、长期行为响应及风险偏好假设经得起敏感性检验。",
+          "note": "我的阅读判断，非编辑或审稿意见。"
+        },
+        "evidence": "最新期刊摘要；已阅读作者站提供的NBER 35408工作稿模型、识别与敏感性部分，未取得最新期刊接受稿。",
+        "pdfStatus": "已保存作者站124页NBER工作稿（封面2026年7月）；其52%结果不替代期刊摘要的51%。",
+        "readingSources": [
+          {
+            "label": "人大图书馆机构资源（需登录；进入全文库按题名查找PDF）",
+            "url": "https://lib.ruc.edu.cn/"
+          },
+          {
+            "label": "期刊原文与元数据",
+            "url": "https://doi.org/10.1093/qje/qjag051"
+          },
+          {
+            "label": "PDF：作者站NBER工作稿（2026年7月，旧版本）",
+            "url": "https://adam-solomon.com/FloodPaper.pdf"
+          }
+        ]
+      },
+      {
+        "id": "20261026-emergency",
+        "title": "基层应急管理制度的能力生成逻辑——以“桦加沙”台风的应急响应为例",
+        "english": "",
+        "authors": "刘一弘；郭紫楠",
+        "journal": "公共管理学报",
+        "subject": "公共治理与组织",
+        "doi": "10.16149/j.cnki.23-1523.20261019.001",
+        "url": "https://gggl.cbpt.cnki.net/portal/journal/portal/client/paper/f459ddfdfbd9d48c012e731f740de9e5",
+        "scope": "chinese",
+        "publicationType": "online",
+        "onlineDate": "2026-10-20",
+        "issueDate": "",
+        "publication": "网络首发录用定稿 2026-10-20；正式卷期未核实",
+        "finding": "案例把应急能力分为组织动员、反馈决策和一线自主处置，追踪制度如何进入行动。",
+        "question": "纸面上有预案，为什么现场未必有执行能力？",
+        "reason": "从过程材料中寻找制度影响组织行为的可观察环节。",
+        "keywords": [
+          "公共治理与组织"
+        ],
+        "sections": [
+          {
+            "text": "文章以沿海Y市应对2025年台风“桦加沙”为例，解释制度如何转化为动员、研判和临机处置能力。这是过程性案例解释，不是制度改革平均效果的因果估计。"
+          },
+          {
+            "text": "阅读重点是规则存在与能力形成之间的距离。作者把结构、运行和赋能制度与不同机制联系起来；摘要不足以确认相对既有理论的完整增量。"
+          },
+          {
+            "text": "摘要说明使用市、区、街道、村居四级访谈、参与式观察、政策文本和报道，开展过程追踪。访谈覆盖、证据编码及替代解释检验，摘要未披露，需核查全文。"
+          },
+          {
+            "text": "我会检查成功应对是否也依赖既有资源、领导经验或灾害路径。需要找关键决策前后的记录及不顺利的环节，判断制度解释能否与这些因素区分；这是待核查问题。",
+            "critique": true,
+            "note": "阅读质疑，非已证实的缺陷。"
+          },
+          {
+            "text": "未取得全文，不提供虚构页码。建议先找响应时间线和一线自主处置实例，观察规则何时改变了行动、何时只是事后描述。"
+          },
+          {
+            "text": "可把应急授权与响应时长联系，结合预警、调度和物资到达记录比较不同基层单位。主要难点是灾情与资源禀赋不可比；本文的案例机制可用于提出假设，尚不足以直接支持该因果结论。",
+            "suggestion": true,
+            "note": "简报延伸，未经系统文献查重。"
+          }
+        ],
+        "assessment": {
+          "text": "价值在于将制度与行动之间的过程具体化；需全文验证证据链和替代解释。",
+          "note": "我的阅读判断，非编辑或审稿意见。"
+        },
+        "evidence": "仅依据期刊官网摘要与网络首发元数据，未阅读全文。",
+        "pdfStatus": "尚未下载：人大机构入口待登录；官网PDF操作未确认产生可用文件。",
+        "readingSources": [
+          {
+            "label": "人大图书馆机构资源（需登录；进入全文库按题名查找PDF）",
+            "url": "https://lib.ruc.edu.cn/"
+          },
+          {
+            "label": "期刊原文与元数据",
+            "url": "https://gggl.cbpt.cnki.net/portal/journal/portal/client/paper/f459ddfdfbd9d48c012e731f740de9e5"
+          },
+          {
+            "label": "期刊稳定记录（进入后点击下载本文/PDF；可能需机构权限）",
+            "url": "https://gggl.cbpt.cnki.net/portal/journal/portal/client/paper/f459ddfdfbd9d48c012e731f740de9e5"
+          }
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "20261026-iv",
+        "reason": "最贴近实证训练：把“IV估计谁的效应”落实到可检查的权重。"
+      },
+      {
+        "id": "20261026-products",
+        "reason": "一张图串起海外冲击、消费者网络与商家反应，适合学习机制识别。"
+      },
+      {
+        "id": "20261026-flood",
+        "reason": "把识别参数接到福利问题，并比较敏感性；注意公开稿与在线版差异。"
+      }
+    ],
+    "inspirations": [
+      "由IV与信息聚合论文延伸：把“异质性”从控制变量提升为研究对象。先检查第一阶段方向或信息重合结构，再讨论怎样汇总；汇总规则本身会改变解释。",
+      "由新品进入研究延伸：消费者行为可能生成企业可用的信息。可以同时观察购买扩散和供给调整，但必须排除共同营销或成本冲击，不能把时序先后直接当机制。",
+      "由洪水保险与应急案例延伸：公共政策效果可能跨预算、跨组织发生。将投保、救助和行动时间线连接能提出更具体的问题，但案例证据与可识别的政策效应必须分开。"
+    ],
+    "directoryNote": "以下为已核实的其余新增，均按首次在线日期列示；正式刊期板块本周无可确认新增。国内已核实新增仅上方1篇，缺额1篇，不跨类补足。《管理世界》10期发布活动有校方报道，但未核实完整刊目与逐篇日期；《金融研究》搜索索引仍为9月25日，不能当作本周新刊。",
+    "baseline": {
+      "status": "partial-weekly-check",
+      "previousIssue": "2026-10-19",
+      "selectionStart": "2026-10-19",
+      "targetInternational": 4,
+      "targetChinese": 2,
+      "actualInternational": 4,
+      "actualChinese": 1
+    },
+    "directory": [
+      {
+        "title": "Looking Under the Hood of Commodity Currency Predictability",
+        "journal": "Management Science",
+        "group": "金融",
+        "date": "2026-10-23",
+        "url": "https://doi.org/10.1287/mnsc.2024.07249",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "Bargaining and Contract Forms in Distribution Channels: Why Do Slotting Fees Arise and Linear Contracts Persist?",
+        "journal": "Management Science",
+        "group": "经济",
+        "date": "2026-10-23",
+        "url": "https://doi.org/10.1287/mnsc.2025.03426",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "Information Transparency, Choice Confidence, and Customer Retention: Field and Laboratory Evidence from Markets for Credence Goods",
+        "journal": "Management Science",
+        "group": "管理",
+        "date": "2026-10-22",
+        "url": "https://doi.org/10.1287/mnsc.2020.02865",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "From Winning to Giving: The Effect of Gold Medals in Crowdsourcing Contests",
+        "journal": "Management Science",
+        "group": "管理",
+        "date": "2026-10-22",
+        "url": "https://doi.org/10.1287/mnsc.2024.07419",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "From Bytes to Bites: Examining the Online and Offline Spillover Impacts of Online Food Delivery Platform Subscriptions",
+        "journal": "Management Science",
+        "group": "管理",
+        "date": "2026-10-22",
+        "url": "https://doi.org/10.1287/mnsc.2025.00954",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "Why Zoning Is Too Restrictive",
+        "journal": "Management Science",
+        "group": "经济",
+        "date": "2026-10-22",
+        "url": "https://doi.org/10.1287/mnsc.2025.02844",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "Share Issues vs. Share Repurchases",
+        "journal": "Management Science",
+        "group": "金融",
+        "date": "2026-10-21",
+        "url": "https://doi.org/10.1287/mnsc.2025.03301",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "Disagreement and Bond PEAD",
+        "journal": "Management Science",
+        "group": "金融",
+        "date": "2026-10-19",
+        "url": "https://doi.org/10.1287/mnsc.2024.07966",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "Conditional and Lenient Drug Approvals",
+        "journal": "Management Science",
+        "group": "经济",
+        "date": "2026-10-19",
+        "url": "https://doi.org/10.1287/mnsc.2025.03836",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "Excess Movement in Option-Implied Beliefs",
+        "journal": "JF",
+        "group": "金融",
+        "date": "2026-10-22",
+        "url": "https://doi.org/10.1111/jofi.70086",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "The Rise of Alternatives",
+        "journal": "RFS",
+        "group": "金融",
+        "date": "2026-10-23",
+        "url": "https://doi.org/10.1093/rfs/hhag091",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "How Private Equity Fuels Nonbank Lending",
+        "journal": "RFS",
+        "group": "金融",
+        "date": "2026-10-19",
+        "url": "https://doi.org/10.1093/rfs/hhag092",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "Optimal Information and Security Design",
+        "journal": "RFS",
+        "group": "金融",
+        "date": "2026-10-19",
+        "url": "https://doi.org/10.1093/rfs/hhag093",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "Pay-for-prominence: The (un)intended consequences of monetary incentives on employees' networks and attrition",
+        "journal": "SMJ",
+        "group": "管理",
+        "date": "2026-10-22",
+        "url": "https://doi.org/10.1002/smj.70133",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "Investors' ideology and corporate symbolic and substantive climate actions",
+        "journal": "SMJ",
+        "group": "管理",
+        "date": "2026-10-19",
+        "url": "https://doi.org/10.1002/smj.70137",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "From Heterogeneous Firms to Heterogeneous Trade Elasticities: The Aggregate Implications of Firm Export Decisions",
+        "journal": "JPE",
+        "group": "经济",
+        "date": "2026-10-23",
+        "url": "https://doi.org/10.1086/743331",
+        "status": "在线优先·新增"
+      },
+      {
+        "title": "Can Gifted Education Help Higher-Ability Boys from Disadvantaged Backgrounds?",
+        "journal": "JPE",
+        "group": "经济",
+        "date": "2026-10-22",
+        "url": "https://doi.org/10.1086/743389",
+        "status": "在线优先·新增"
+      }
+    ],
+    "journalChecks": [
+      {
+        "journal": "AER",
+        "group": "国际·经济",
+        "issue": "116(10) / 2026-10",
+        "status": "当前仍为十月号，未确认新增正式刊期",
+        "online": "待刊表可读，但无首次上线日期；抽查首篇也仅标Forthcoming，不归为本周发表",
+        "url": "https://www.aeaweb.org/journals/aer/issues",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "QJE",
+        "group": "国际·经济",
+        "issue": "141(4) / 2026-11（预列刊期）",
+        "status": "当前目录预列十一月号；未将未来刊期当作本周正式出版",
+        "online": "10月22日两篇接受稿，均精选",
+        "url": "https://academic.oup.com/qje/advance-articles",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "JPE",
+        "group": "国际·经济",
+        "issue": "134(10) / 2026-10（侧栏显示）",
+        "status": "current页超时，Ahead of Print侧栏显示十月号；正式目录不完整",
+        "online": "核实10月22、23日两篇新增，列目录；Uber论文10月13日，早于窗口",
+        "url": "https://www.journals.uchicago.edu/toc/jpe/current",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "Econometrica",
+        "group": "国际·经济",
+        "issue": "94(5) / 2026-09",
+        "status": "正式目录可读，未见新刊期",
+        "online": "Early View不可访问，不能排除新增",
+        "url": "https://onlinelibrary.wiley.com/toc/14680262/0/0",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "REStud",
+        "group": "国际·经济",
+        "issue": "本次正式期未核实",
+        "status": "current入口超时",
+        "online": "10月21日rdag116与rdag117，均精选",
+        "url": "https://academic.oup.com/restud/advance-articles",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "JF",
+        "group": "国际·金融",
+        "issue": "81(5) / 2026-10",
+        "status": "当前正式期可读，期信息9月22日上线",
+        "online": "10月22日jofi.70086列目录",
+        "url": "https://onlinelibrary.wiley.com/toc/15406261/0/0",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "JFE",
+        "group": "国际·金融",
+        "issue": "未核实",
+        "status": "latest返回403",
+        "online": "Articles in Press返回403",
+        "url": "https://www.sciencedirect.com/journal/journal-of-financial-economics/articles-in-press",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "RFS",
+        "group": "国际·金融",
+        "issue": "39(11) / 2026-11（预列刊期）",
+        "status": "当前目录预列十一月，未当作本周正式出版",
+        "online": "10月19日两篇、23日一篇已核实，列目录",
+        "url": "https://academic.oup.com/rfs/advance-articles",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "AMJ",
+        "group": "国际·管理",
+        "issue": "未核实",
+        "status": "current返回403",
+        "online": "在线优先不可访问",
+        "url": "https://journals.aom.org/toc/amj/0/0",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "AMR",
+        "group": "国际·管理",
+        "issue": "未核实",
+        "status": "current返回403",
+        "online": "在线优先不可访问",
+        "url": "https://journals.aom.org/toc/amr/0/0",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "ASQ",
+        "group": "国际·管理",
+        "issue": "71(3) / 2026-09",
+        "status": "正式期仍为九月号",
+        "online": "OnlineFirst不可访问",
+        "url": "https://journals.sagepub.com/toc/asqa/0/0",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "SMJ",
+        "group": "国际·管理",
+        "issue": "47(11) / 2026-11（预列刊期）",
+        "status": "期信息10月6日上线，正文首次上线早于窗口",
+        "online": "10月19日、22日各一篇，列目录",
+        "url": "https://sms.onlinelibrary.wiley.com/toc/10970266/0/0",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "Management Science",
+        "group": "国际·管理",
+        "issue": "72(10) / 2026-10；目录标10月5日",
+        "status": "正式期未变化",
+        "online": "10月19—23日9篇新增，均列目录",
+        "url": "https://pubsonline.informs.org/toc/mnsc/0/0",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "经济研究",
+        "group": "国内A·经济",
+        "issue": "未核实",
+        "status": "官网只返回标题，未加载目录",
+        "online": "未核实首发",
+        "url": "https://erj.ajcass.com/",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "世界经济",
+        "group": "国内A·经济",
+        "issue": "49(10) / 2026-10-10",
+        "status": "当前目录与上期一致，早于窗口",
+        "online": "未取得独立首发列表",
+        "url": "https://sjjj.magtech.com.cn/CN/home",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "中国工业经济",
+        "group": "国内A·经济",
+        "issue": "未核实",
+        "status": "官网403",
+        "online": "首发未核实",
+        "url": "https://ciejournal.ajcass.com/",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "金融研究",
+        "group": "国内A·经济",
+        "issue": "2026年第9期 / 2026-09-25（搜索索引）",
+        "status": "当期入口超时；索引不能保证实时",
+        "online": "首发未核实",
+        "url": "https://www.jryj.org.cn/CN/1002-7246/current.shtml",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "管理世界",
+        "group": "国内A·管理",
+        "issue": "2026年第10期（校方活动报道）",
+        "status": "官网超时；南京审计大学10月21日报道新刊活动，未核实逐篇刊目及日期",
+        "online": "首发未核实",
+        "url": "https://www.mwm.net.cn/",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "南开管理评论",
+        "group": "国内A·管理",
+        "issue": "未核实",
+        "status": "官网403",
+        "online": "首发未核实",
+        "url": "https://nbr.nankai.edu.cn/",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "公共管理学报",
+        "group": "国内A·管理",
+        "issue": "23(3) / 2026",
+        "status": "正式期仍为第三期",
+        "online": "10月20日应急制度案例新增并精选；10月14、15日已收录",
+        "url": "https://gggl.cbpt.cnki.net/portal",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "管理科学学报",
+        "group": "国内A·管理",
+        "issue": "未核实",
+        "status": "官网超时",
+        "online": "首发未核实",
+        "url": "https://jmsc.tju.edu.cn/",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "中国行政管理",
+        "group": "国内A·管理",
+        "issue": "未核实",
+        "status": "官网超时",
+        "online": "首发未核实",
+        "url": "https://www.cpaj.com.cn/",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "会计研究",
+        "group": "国内A·管理",
+        "issue": "未核实",
+        "status": "会计学会刊目页超时",
+        "online": "首发未核实",
+        "url": "https://www.asc.net.cn/AccountingResearch/BrowsePeriodical.aspx",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "中国农村经济",
+        "group": "国内A·管理",
+        "issue": "未核实",
+        "status": "官网入口不可访问",
+        "online": "首发未核实",
+        "url": "https://crecrs-zgncjj.ajcass.org/",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "统计研究",
+        "group": "国内A·统计",
+        "issue": "43(9) / 2026",
+        "status": "官网仍为9期",
+        "online": "所见网络首发最新为9月29日，未见本周新增",
+        "url": "https://tjyj.cbpt.cnki.net/portal",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "中国社会科学",
+        "group": "综合交叉",
+        "issue": "官网栏目最新显示2026年第6期",
+        "status": "栏目滞后，无法确认实际最新期",
+        "online": "未核实新增",
+        "url": "https://www.cssn.cn/dkzgxp/zgxp_zgshkx/",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "中国人民大学学报",
+        "group": "综合交叉",
+        "issue": "未核实",
+        "status": "官网超时",
+        "online": "未核实新增",
+        "url": "https://xuebao.ruc.edu.cn/CN/home",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "教学与研究",
+        "group": "综合交叉",
+        "issue": "未核实",
+        "status": "入口不可访问",
+        "online": "未核实新增",
+        "url": "https://jxyyj.ruc.edu.cn/CN/home",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "北京大学学报（哲社版）",
+        "group": "综合交叉",
+        "issue": "63(4) / 2026",
+        "status": "官网显示第四期，不能确认及时性",
+        "online": "未取得首发日期",
+        "url": "https://bdzk.cbpt.cnki.net/portal/journal/portal/client/index",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "求是",
+        "group": "综合交叉",
+        "issue": "2026年第20期",
+        "status": "页面所列经管相关内容与上期一致",
+        "online": "普通网站新闻不当作期刊新增",
+        "url": "https://www.qstheory.com/index.htm",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "世界经济与政治",
+        "group": "综合交叉",
+        "issue": "未核实",
+        "status": "主办站不可访问",
+        "online": "未核实新增",
+        "url": "https://iwep.cssn.cn/cbw/cbw_xsqk/xsqk_sjjjyz/",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "人口研究",
+        "group": "综合交叉",
+        "issue": "未核实",
+        "status": "跳转VPN登录",
+        "online": "未核实新增",
+        "url": "https://rkyj.ruc.edu.cn/CN/home",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "社会学研究",
+        "group": "综合交叉",
+        "issue": "未核实",
+        "status": "官网403",
+        "online": "未核实新增",
+        "url": "https://shxyj.ajcass.com/",
+        "checkedAt": "2026-10-26"
+      },
+      {
+        "journal": "新华文摘",
+        "group": "综合交叉·转载",
+        "issue": "未核实",
+        "status": "官网不可访问",
+        "online": "未核实新的经管全文转载；不将转载当新研究",
+        "url": "https://www.xinhuawz.com/",
+        "checkedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
     "id": "2026-10-19",
     "label": "第 5 期 · 正式周报",
     "date": "2026-10-19",
